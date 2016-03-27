@@ -1,0 +1,21 @@
+/* Artiste
+ *
+ * /sass/objects/_topbar.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+
+ .topbar nav ul  {
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: center;
+ }
+ .topbar nav ul li{
+ 	height: 3.7rem;
+ 	line-height: 3.7rem;
+ 	flex: 1;
+ }
+ .topbar nav ul li :hover{
+ 	display: block;
+ }

@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/* Artiste
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+/* Modus Versus Slicing
+ *
+ * /sass/settings/_paths.scss - Global paths variables
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+/* Artiste
+ *
+ * /sass/settings/_colors.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+/* Artiste
+ *
+ * /sass/settings/_fonts.scss - Global fonts variables & fonts loading
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+@font-face {
+  font-family: 'roboto';
+  src: url("roboto-bold-webfont.eot");
+  src: url("roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("roboto-bold-webfont.woff2") format("woff2"), url("roboto-bold-webfont.woff") format("woff"), url("roboto-bold-webfont.ttf") format("truetype"), url("roboto-bold-webfont.svg#robotobold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("roboto-light-webfont.eot");
+  src: url("roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("roboto-light-webfont.woff2") format("woff2"), url("roboto-light-webfont.woff") format("woff"), url("roboto-light-webfont.ttf") format("truetype"), url("roboto-light-webfont.svg#robotolight") format("svg");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("roboto-medium-webfont.eot");
+  src: url("roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("roboto-medium-webfont.woff2") format("woff2"), url("roboto-medium-webfont.woff") format("woff"), url("roboto-medium-webfont.ttf") format("truetype"), url("roboto-medium-webfont.svg#robotomedium") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("roboto-regular-webfont.eot");
+  src: url("roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("roboto-regular-webfont.woff2") format("woff2"), url("roboto-regular-webfont.woff") format("woff"), url("roboto-regular-webfont.ttf") format("truetype"), url("roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Artiste
+ *
+ * /sass/tools/_util.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+h1 {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  display: none; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  background-color: #FEFDF0;
+  /*width: 1200px;*/ }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Artiste
+ *
+ * /sass/base/_root.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+/* Artiste
+ *
+ * /sass/objects/_header.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+header {
+  display: flex;
+  flex-flow: column wrap; }
+
+/* Artiste
+ *
+ * /sass/objects/_topbar.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+.topbar nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.topbar nav ul li {
+  height: 3.7rem;
+  line-height: 3.7rem;
+  flex: 1; }
+
+.topbar nav ul li :hover {
+  display: block; }
+
+/* Artiste
+ *
+ * /sass/objects/_block.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+.block {
+  margin: 50px 150px 0; }
+
+.block h2 {
+  margin: 20px 0; }
+
+.block-contenu {
+  -webkit-column: 2;
+  -moz-column: 2;
+  width: 40em;
+  margin: 0 auto; }
+
+.background {
+  height: 92vh; }
+
+/* Artiste
+ *
+ * /sass/objects/_footer.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+footer {
+  width: 100%;
+  padding: 11px 0;
+  margin-top: 20px; }
+
+/* Artiste
+ *
+ * /sass/components/_block.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+.block {
+  hyphens: auto; }
+
+.block h2 {
+  text-align: center;
+  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 20px; }
+
+.lampe {
+  background: url("../img/lampe.svg") no-repeat center;
+  height: 100px; }
+
+.block-contenu p {
+  color: black;
+  line-height: 1.25;
+  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px; }
+
+.background {
+  -moz-background-size: cover;
+  background: url("../img/background.jpg") no-repeat center;
+  background-size: cover;
+  /* image s'adapte par rapport à l'écran*/ }
+
+/* Artiste
+ *
+ * /sass/components/_topbar.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+.topbar {
+  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  background-color: #8A8A8A; }
+
+.topbar nav ul li {
+  text-align: center; }
+
+.topbar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px; }
+
+.topbar nav ul li :hover {
+  background-color: #BABABA; }
+
+/* Artiste
+ *
+ * /sass/components/_footer.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+footer {
+  text-align: center;
+  background-color: #969696; }
+
+footer p {
+  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  color: #323232; }
+
+footer p span {
+  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
+
+/*# sourceMappingURL=styles.css.map */

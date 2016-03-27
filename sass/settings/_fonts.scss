@@ -1,0 +1,56 @@
+/* Artiste
+ *
+ * /sass/settings/_fonts.scss - Global fonts variables & fonts loading
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+
+//Variables
+$roboto : "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+//Roboto
+@font-face {
+    font-family: 'roboto';
+    src: url('roboto-bold-webfont.eot');
+    src: url('roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('roboto-bold-webfont.woff2') format('woff2'),
+         url('roboto-bold-webfont.woff') format('woff'),
+         url('roboto-bold-webfont.ttf') format('truetype'),
+         url('roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('roboto-light-webfont.eot');
+    src: url('roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('roboto-light-webfont.woff2') format('woff2'),
+         url('roboto-light-webfont.woff') format('woff'),
+         url('roboto-light-webfont.ttf') format('truetype'),
+         url('roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('roboto-medium-webfont.eot');
+    src: url('roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('roboto-medium-webfont.woff2') format('woff2'),
+         url('roboto-medium-webfont.woff') format('woff'),
+         url('roboto-medium-webfont.ttf') format('truetype'),
+         url('roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('roboto-regular-webfont.eot');
+    src: url('roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('roboto-regular-webfont.woff2') format('woff2'),
+         url('roboto-regular-webfont.woff') format('woff'),
+         url('roboto-regular-webfont.ttf') format('truetype'),
+         url('roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

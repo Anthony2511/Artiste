@@ -1,0 +1,23 @@
+/* Artiste
+ *
+ * /sass/components/_topbar.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+ .topbar{
+ 	font-family: $roboto;
+    font-weight: lighter;
+ 	background-color: $backgroundColorTopbar;
+ }
+ .topbar nav ul li{
+      text-align: center;
+ }
+ .topbar li a{
+    text-decoration: none;
+    color: $ColorTopbar;
+    font-size: 20px;
+ }
+ .topbar nav ul li :hover{
+     background-color:  $backgroundColorTopbarHover;
+ }
