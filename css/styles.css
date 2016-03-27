@@ -144,18 +144,16 @@ header {
  * coded by Anthony2511
  * started at 02/03/2016
  */
-.topbar nav ul {
+.topbar__list {
   display: flex;
   flex-direction: row;
   justify-content: center; }
-
-.topbar nav ul li {
-  height: 3.7rem;
-  line-height: 3.7rem;
-  flex: 1; }
-
-.topbar nav ul li :hover {
-  display: block; }
+  .topbar__list__index {
+    height: 3.7rem;
+    line-height: 3.7rem;
+    flex: 1; }
+    .topbar__list__index:hover {
+      display: block; }
 
 /* Artiste
  *
@@ -164,20 +162,20 @@ header {
  * coded by Anthony2511
  * started at 02/03/2016
  */
-.block {
-  margin: 50px 150px 0; }
-
-.block h2 {
-  margin: 20px 0; }
-
-.block-contenu {
-  -webkit-column: 2;
-  -moz-column: 2;
-  width: 40em;
-  margin: 0 auto; }
-
 .background {
   height: 92vh; }
+
+.block {
+  margin: 50px 150px 0; }
+  .block__lampe {
+    height: 100px; }
+  .block__title {
+    margin: 20px 0; }
+  .block__contenu {
+    -webkit-column: 2;
+    -moz-column: 2;
+    width: 40em;
+    margin: 0 auto; }
 
 /* Artiste
  *
@@ -198,32 +196,28 @@ footer {
  * coded by Anthony2511
  * started at 02/03/2016
  */
-.block {
-  hyphens: auto; }
-
-.block h2 {
-  text-align: center;
-  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: lighter;
-  text-transform: uppercase;
-  font-size: 20px; }
-
-.lampe {
-  background: url("../img/lampe.svg") no-repeat center;
-  height: 100px; }
-
-.block-contenu p {
-  color: black;
-  line-height: 1.25;
-  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 20px; }
-
 .background {
   -moz-background-size: cover;
   background: url("../img/background.jpg") no-repeat center;
   background-size: cover;
   /* image s'adapte par rapport à l'écran*/ }
+
+.block {
+  hyphens: auto; }
+  .block__lampe {
+    background: url("../img/lampe.svg") no-repeat center; }
+  .block__title {
+    text-align: center;
+    font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 20px; }
+  .block__contenu__text {
+    color: black;
+    line-height: 1.25;
+    font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 20px; }
 
 /* Artiste
  *
@@ -236,17 +230,14 @@ footer {
   font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: lighter;
   background-color: #8A8A8A; }
-
-.topbar nav ul li {
-  text-align: center; }
-
-.topbar li a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px; }
-
-.topbar nav ul li :hover {
-  background-color: #BABABA; }
+  .topbar__list__index {
+    text-align: center; }
+    .topbar__list__index:hover {
+      background-color: #BABABA; }
+    .topbar__list__index__link {
+      text-decoration: none;
+      color: white;
+      font-size: 20px; }
 
 /* Artiste
  *

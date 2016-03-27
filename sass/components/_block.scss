@@ -5,31 +5,30 @@
  * coded by Anthony2511
  * started at 02/03/2016
  */
-
- .block{
-     hyphens: auto;
- }
- .block h2{
-     text-align: center;
-     font-family: $roboto;
-     font-weight: lighter;
-     text-transform: uppercase;
-  	 font-size: 20px;
-
- }
- .lampe{
-     background: url( "#{ $imgPath }lampe.svg" ) no-repeat center;
-     height: 100px;
- }
- .block-contenu p{
-     color: $colorBlock;
-     line-height: 1.25;
-  	 font-family: $roboto;
-     font-weight: normal;
-     font-size: 20px;
- }
  .background{
  	-moz-background-size:cover;
  	background: url( "#{ $imgPath }background.jpg" ) no-repeat center;
  	background-size: cover; /* image s'adapte par rapport à l'écran*/
+ }
+ .block{
+     hyphens: auto;
+     &__lampe{
+         background: url( "#{ $imgPath }lampe.svg" ) no-repeat center;
+     }
+     &__title{
+         text-align: center;
+         font-family: $roboto;
+         font-weight: lighter;
+         text-transform: uppercase;
+        font-size: 20px;
+     }
+     &__contenu{
+         &__text{
+             color: $colorBlock;
+             line-height: 1.25;
+            font-family: $roboto;
+             font-weight: normal;
+             font-size: 20px;
+         }
+     }
  }

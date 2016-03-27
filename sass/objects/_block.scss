@@ -5,18 +5,22 @@
  * coded by Anthony2511
  * started at 02/03/2016
  */
- .block{
- 	margin : 50px 150px 0;
- }
- .block h2{
- 	margin: 20px 0;
- }
- .block-contenu{
- 	-webkit-column: 2;
-    -moz-column: 2;
-    width: 40em;
-    margin: 0 auto;
- }
+
  .background{
      height: 92vh;
+ }
+ .block{
+     margin : 50px 150px 0;
+     &__lampe{
+         height: 100px;
+     }
+     &__title{
+         margin: 20px 0;
+     }
+     &__contenu{
+         -webkit-column: 2;
+          -moz-column: 2;
+          width: 40em;
+          margin: 0 auto;
+     }
  }

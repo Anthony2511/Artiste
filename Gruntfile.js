@@ -13,7 +13,6 @@ module.exports = function( grunt ) {
     // 1. load tasks
     grunt.loadNpmTasks( "grunt-contrib-watch" );
     grunt.loadNpmTasks( "grunt-cowsay" );
-    grunt.loadNpmTasks( "grunt-eslint" );
     grunt.loadNpmTasks( "grunt-browser-sync" );
     grunt.loadNpmTasks( "grunt-sass" );
 
@@ -38,13 +37,6 @@ module.exports = function( grunt ) {
                     "message": "I'm done!"
                 }
             }
-        },
-        // eslint
-        "eslint": {
-            "options": {
-                "configFile": ".eslintrc.json"
-            },
-            "scripts": [ "scripts/**/*.js" ]
         },
         // sass
         "sass": {

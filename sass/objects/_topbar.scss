@@ -6,16 +6,18 @@
  * started at 02/03/2016
  */
 
- .topbar nav ul  {
- 	display: flex;
- 	flex-direction: row;
- 	justify-content: center;
- }
- .topbar nav ul li{
- 	height: 3.7rem;
- 	line-height: 3.7rem;
- 	flex: 1;
- }
- .topbar nav ul li :hover{
- 	display: block;
+ .topbar{
+    &__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        &__index{
+            height: 3.7rem;
+            line-height: 3.7rem;
+            flex: 1;
+            &:hover{
+                display: block;
+            }
+        }
+    }
  }
