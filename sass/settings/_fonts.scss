@@ -40,8 +40,20 @@ $roboto : "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
          url('roboto-medium-webfont.woff') format('woff'),
          url('roboto-medium-webfont.ttf') format('truetype'),
          url('roboto-medium-webfont.svg#robotomedium') format('svg');
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('robotocondensed-light-webfont.eot');
+    src: url('robotocondensed-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('robotocondensed-light-webfont.woff2') format('woff2'),
+         url('robotocondensed-light-webfont.woff') format('woff'),
+         url('robotocondensed-light-webfont.ttf') format('truetype'),
+         url('robotocondensed-light-webfont.svg#roboto_condensedlight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
 }
 @font-face {
     font-family: 'roboto';

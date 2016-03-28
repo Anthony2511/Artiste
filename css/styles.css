@@ -45,7 +45,14 @@
   font-family: 'roboto';
   src: url("roboto-medium-webfont.eot");
   src: url("roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("roboto-medium-webfont.woff2") format("woff2"), url("roboto-medium-webfont.woff") format("woff"), url("roboto-medium-webfont.ttf") format("truetype"), url("roboto-medium-webfont.svg#robotomedium") format("svg");
-  font-weight: 600;
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("robotocondensed-light-webfont.eot");
+  src: url("robotocondensed-light-webfont.eot?#iefix") format("embedded-opentype"), url("robotocondensed-light-webfont.woff2") format("woff2"), url("robotocondensed-light-webfont.woff") format("woff"), url("robotocondensed-light-webfont.ttf") format("truetype"), url("robotocondensed-light-webfont.svg#roboto_condensedlight") format("svg");
+  font-weight: 300;
   font-style: normal; }
 
 @font-face {
@@ -55,6 +62,13 @@
   font-weight: normal;
   font-style: normal; }
 
+/* Artiste
+ *
+ * /sass/objects/_block.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
 /* Artiste
  *
  * /sass/tools/_util.scss - Main stylesheet
@@ -152,8 +166,13 @@ header {
     height: 3.7rem;
     line-height: 3.7rem;
     flex: 1; }
+
+@media (max-width: 640px) {
+  .topbar__list {
+    display: inline-block;
+    width: 100%; }
     .topbar__list__index:hover {
-      display: block; }
+      color: red; } }
 
 /* Artiste
  *
@@ -166,16 +185,20 @@ header {
   height: 92vh; }
 
 .block {
-  margin: 50px 150px 0; }
+  margin: 100px auto;
+  width: 965px; }
   .block__lampe {
     height: 100px; }
   .block__title {
-    margin: 20px 0; }
+    margin: 20px 0 40px; }
   .block__contenu {
-    -webkit-column: 2;
-    -moz-column: 2;
-    width: 40em;
-    margin: 0 auto; }
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .block__contenu__profil {
+      margin-right: 50px; }
+    .block__contenu__text {
+      width: 400px; }
 
 /* Artiste
  *
@@ -202,22 +225,50 @@ footer {
   background-size: cover;
   /* image s'adapte par rapport à l'écran*/ }
 
-.block {
-  hyphens: auto; }
-  .block__lampe {
-    background: url("../img/lampe.svg") no-repeat center; }
-  .block__title {
-    text-align: center;
-    font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: lighter;
-    text-transform: uppercase;
-    font-size: 20px; }
-  .block__contenu__text {
-    color: black;
-    line-height: 1.25;
-    font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    font-size: 20px; }
+.block__lampe {
+  background: url("../img/lampe.svg") no-repeat center; }
+
+.block__title {
+  text-align: center;
+  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 20px; }
+
+.block__contenu__text {
+  color: black;
+  line-height: 1.25;
+  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  hyphens: auto;
+  word-wrap: break-word; }
+
+@media (max-width: 1024px) {
+  .block {
+    width: auto; }
+    .block__contenu__profil img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px; }
+    .block__contenu__text {
+      color: red; } }
+
+@media (max-width: 640px) {
+  .background {
+    display: none; }
+  .block {
+    width: auto; }
+    .block__contenu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .block__contenu__profil {
+        margin: 0 auto; }
+        .block__contenu__profil img {
+          margin-bottom: 20px; }
+      .block__contenu__text {
+        margin: 0 auto; } }
 
 /* Artiste
  *

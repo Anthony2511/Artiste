@@ -11,24 +11,69 @@
  	background-size: cover; /* image s'adapte par rapport à l'écran*/
  }
  .block{
-     hyphens: auto;
      &__lampe{
          background: url( "#{ $imgPath }lampe.svg" ) no-repeat center;
      }
      &__title{
          text-align: center;
          font-family: $roboto;
-         font-weight: lighter;
+         font-weight: normal;
          text-transform: uppercase;
-        font-size: 20px;
+         font-size: 20px;
      }
      &__contenu{
+         &__profil{
+
+         }
          &__text{
              color: $colorBlock;
              line-height: 1.25;
             font-family: $roboto;
-             font-weight: normal;
+             font-weight: 300;
              font-size: 20px;
+             hyphens: auto;
+             word-wrap: break-word;
          }
      }
  }
+ @media(max-width: 1024px){
+     .block{
+         width: auto;
+         &__contenu{
+             &__profil{
+                 & img{
+                     max-width: 100%;
+                     height: auto;
+                     margin-bottom: 20px;
+                 }
+             }
+             &__text{
+                 color: red;
+             }
+         }
+     }
+ }
+
+@media (max-width: 640px){
+    .background{
+        display: none;
+    }
+    .block{
+        width: auto;
+        &__contenu{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &__profil{
+                margin: 0 auto;
+                & img{
+
+                    margin-bottom: 20px;
+                }
+            }
+            &__text{
+                margin: 0 auto;
+            }
+        }
+    }
+}

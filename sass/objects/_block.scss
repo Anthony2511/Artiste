@@ -10,17 +10,23 @@
      height: 92vh;
  }
  .block{
-     margin : 50px 150px 0;
+     margin : 100px auto;
+     width: $containerWidth;
      &__lampe{
          height: 100px;
      }
      &__title{
-         margin: 20px 0;
+         margin: 20px 0 40px;
      }
      &__contenu{
-         -webkit-column: 2;
-          -moz-column: 2;
-          width: 40em;
-          margin: 0 auto;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         &__profil{
+             margin-right: 50px;
+         }
+         &__text{
+             width: 400px;
+         }
      }
  }
