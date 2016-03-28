@@ -1,0 +1,70 @@
+/* Artiste
+ *
+ * /sass/objects/_block.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+
+ .background{
+     height: 92vh;
+ }
+ .block{
+     margin : 100px auto;
+     width: $containerWidth;
+     &__lampe{
+         height: 100px;
+     }
+     &__title{
+         margin: 20px 0 40px;
+     }
+     &__contenu{
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         &__profil{
+             margin-right: 50px;
+         }
+         &__text{
+             width: 400px;
+         }
+     }
+ }
+ @media(max-width: 1024px){
+     .block{
+         width: auto;
+         &__contenu{
+             &__profil{
+                 & img{
+                     max-width: 100%;
+                     height: auto;
+                     margin-bottom: 20px;
+                 }
+             }
+         }
+     }
+ }
+
+@media (max-width: 640px){
+    .background{
+        display: none;
+    }
+    .block{
+        width: auto;
+        &__contenu{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &__profil{
+                margin: 0 auto;
+                & img{
+
+                    margin-bottom: 20px;
+                }
+            }
+            &__text{
+                margin: 0 auto;
+            }
+        }
+    }
+}

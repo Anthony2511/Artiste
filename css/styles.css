@@ -20,6 +20,10 @@
  * coded by Anthony2511
  * started at 02/03/2016
  */
+/** DEBUT COLORS INDEX **/
+/** FIN COLORS INDEX **/
+/** DEBUT COLORS GALERIE **/
+/** FIN COLORS GALERIE **/
 /* Artiste
  *
  * /sass/settings/_fonts.scss - Global fonts variables & fonts loading
@@ -170,9 +174,7 @@ header {
 @media (max-width: 640px) {
   .topbar__list {
     display: inline-block;
-    width: 100%; }
-    .topbar__list__index:hover {
-      color: red; } }
+    width: 100%; } }
 
 /* Artiste
  *
@@ -200,6 +202,30 @@ header {
     .block__contenu__text {
       width: 400px; }
 
+@media (max-width: 1024px) {
+  .block {
+    width: auto; }
+    .block__contenu__profil img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px; } }
+
+@media (max-width: 640px) {
+  .background {
+    display: none; }
+  .block {
+    width: auto; }
+    .block__contenu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .block__contenu__profil {
+        margin: 0 auto; }
+        .block__contenu__profil img {
+          margin-bottom: 20px; }
+      .block__contenu__text {
+        margin: 0 auto; } }
+
 /* Artiste
  *
  * /sass/objects/_footer.scss - Main stylesheet
@@ -207,7 +233,7 @@ header {
  * coded by Anthony2511
  * started at 02/03/2016
  */
-footer {
+.copyright {
   width: 100%;
   padding: 11px 0;
   margin-top: 20px; }
@@ -244,32 +270,6 @@ footer {
   hyphens: auto;
   word-wrap: break-word; }
 
-@media (max-width: 1024px) {
-  .block {
-    width: auto; }
-    .block__contenu__profil img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 20px; }
-    .block__contenu__text {
-      color: red; } }
-
-@media (max-width: 640px) {
-  .background {
-    display: none; }
-  .block {
-    width: auto; }
-    .block__contenu {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .block__contenu__profil {
-        margin: 0 auto; }
-        .block__contenu__profil img {
-          margin-bottom: 20px; }
-      .block__contenu__text {
-        margin: 0 auto; } }
-
 /* Artiste
  *
  * /sass/components/_topbar.scss - Main stylesheet
@@ -297,17 +297,19 @@ footer {
  * coded by Anthony2511
  * started at 02/03/2016
  */
-footer {
+.copyright {
   text-align: center;
   background-color: #969696; }
+  .copyright__design {
+    font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: #323232; }
+  .copyright__name {
+    font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal; }
 
-footer p {
-  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: lighter;
-  color: #323232; }
-
-footer p span {
-  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal; }
+.images {
+  -moz-columns: 2;
+  -webkit-columns: 2; }
 
 /*# sourceMappingURL=styles.css.map */

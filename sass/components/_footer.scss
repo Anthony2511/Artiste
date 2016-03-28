@@ -6,16 +6,16 @@
  * started at 02/03/2016
  */
 
- footer{
+.copyright{
      text-align: center;
      background-color: $backgroundColorFooter;
- }
- footer p{
- 	font-family: $roboto;
-    font-weight: lighter;
- 	color:$colorFooter;
- }
- footer p span {
- 	font-family: $roboto;
-    font-weight: normal;
+     &__design{
+         font-family: $roboto;
+          font-weight: 300;
+         color:$colorFooter;
+     }
+     &__name{
+         font-family: $roboto;
+          font-weight: normal;
+     }
  }
