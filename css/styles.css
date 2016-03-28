@@ -308,8 +308,52 @@ header {
     font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal; }
 
+.dessin {
+  background: url("../img/crayon.svg") no-repeat center;
+  height: 100px;
+  margin-top: 100px; }
+
+.title {
+  text-align: center;
+  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 20px 0 40px; }
+
 .images {
-  -moz-columns: 2;
-  -webkit-columns: 2; }
+  -webkit-columns: 3;
+  margin: 100px auto;
+  width: 965px; }
+  .images__bloc {
+    position: relative; }
+    .images__bloc:hover .images__bloc__list {
+      opacity: 1;
+      overflow: hidden;
+      cursor: pointer; }
+    .images__bloc__visuel {
+      width: 300px;
+      height: auto; }
+    .images__bloc__list {
+      position: absolute;
+      bottom: 0;
+      color: white;
+      background: rgba(100, 100, 100, 0.5);
+      width: 300px;
+      text-align: center;
+      opacity: 0;
+      display: block;
+      height: 100%;
+      font-family: 'roboto';
+      font-weight: normal;
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .images__bloc__list__title {
+        margin-bottom: 4px;
+        font-size: 25px; }
+        .images__bloc__list__title:target {
+          background-color: red; }
 
 /*# sourceMappingURL=styles.css.map */
