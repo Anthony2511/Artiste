@@ -1,0 +1,43 @@
+
+.livres{
+    background: url( "#{ $imgPath }livres.svg" ) no-repeat center;
+    height: 100px;
+    margin-top: 100px;
+}
+.books{
+    width: $containerWidth;
+    margin: 0 auto;
+    &__list{
+        position: relative;
+        &__header{
+            display: flex;
+            flex-direction: row;
+            &__photo{
+            }
+            &__title{
+                font-size: 30px;
+                font-family: 'roboto';
+                font-weight: normal;
+            }
+        }
+        &__contenu{
+            position: absolute;
+            left: 500px;
+            top: 200px;
+            &__detail{
+                &__author{
+
+                }
+                &__editor{
+
+                }
+                &__page{
+
+                }
+            }
+            &__resume{
+
+            }
+        }
+    }
+}

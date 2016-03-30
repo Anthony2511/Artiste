@@ -362,4 +362,26 @@ header {
     .images__bloc__list__title {
       font-size: 25px; }
 
+.livres {
+  background: url("../img/livres.svg") no-repeat center;
+  height: 100px;
+  margin-top: 100px; }
+
+.books {
+  width: 965px;
+  margin: 0 auto; }
+  .books__list {
+    position: relative; }
+    .books__list__header {
+      display: flex;
+      flex-direction: row; }
+      .books__list__header__title {
+        font-size: 30px;
+        font-family: 'roboto';
+        font-weight: normal; }
+    .books__list__contenu {
+      position: absolute;
+      left: 500px;
+      top: 200px; }
+
 /*# sourceMappingURL=styles.css.map */
