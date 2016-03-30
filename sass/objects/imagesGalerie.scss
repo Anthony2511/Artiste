@@ -1,0 +1,32 @@
+.dessin{
+    height: 100px;
+    margin-top: 100px;
+}
+.title{
+    margin: 20px 0 40px;
+}
+.images{
+    margin: 100px auto;
+    width: $containerWidth;
+
+    &__bloc{
+        position: relative;
+        &__visuel{
+            width: 300px;
+            height: auto;
+        }
+        &__list{
+            position: absolute;
+            bottom: 0;
+            width: 300px;
+            display: block;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &__title{
+                margin-bottom: 4px;
+            }
+        }
+    }
+}

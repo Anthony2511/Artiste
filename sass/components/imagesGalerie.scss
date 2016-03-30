@@ -1,7 +1,5 @@
 .dessin{
     background: url( "#{ $imgPath }crayon.svg" ) no-repeat center;
-    height: 100px;
-    margin-top: 100px;
 }
 .title{
     text-align: center;
@@ -9,49 +7,26 @@
     font-weight: normal;
     text-transform: uppercase;
     font-size: 20px;
-    margin: 20px 0 40px;
 }
 .images{
     -webkit-columns: 3;
-    margin: 100px auto;
-    width: $containerWidth;
 
     &__bloc{
-        position: relative;
         &:hover &__list{
             opacity: 1;
             overflow: hidden;
             cursor: pointer;
         }
-        &__visuel{
-            width: 300px;
-            height: auto;
-        }
         &__list{
-            position: absolute;
-            bottom: 0;
             color: white;
             background: rgba(100, 100, 100, 0.5);
-            width: 300px;
             text-align: center;
             opacity: 0;
-            display: block;
-            height: 100%;
             font-family: 'roboto';
             font-weight: normal;
             font-size: 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
             &__title{
-                margin-bottom: 4px;
             	font-size: 25px;
-                &:target{
-                    background-color: red;
-                }
-            }
-            &__contenu{
-
             }
         }
     }

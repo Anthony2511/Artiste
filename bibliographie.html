@@ -2,48 +2,49 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>Artiste</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+	<title>Bibliographie - Nicolas De Stael</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<div id="wrap">
-		<header>
-			<img src="img/photo.jpg" alt="photo de la biographie" width="300" height="258">
-			<h1 role="heading" aria-level="1">
-				<a href="#"><span class="titre">Nic</span>olas <span>De Stael</span></a>
-			</h1>
-			<div class="topbar">
+		<header> <!-- début HEADER -->
+			<div class="topbar"> <!-- début TOPBAR -->
 				<nav>
-					<h2 role="heading" aria-level="2">
+					<h1 aria-level="1" class="topbar__title">
 						Main navigation menu
-					</h2>
-					<ul>
-						<li>
-							<a href="index.html">Biographie</a>
+					</h1>
+					<ul class="topbar__list">
+						<li class= "topbar__list__index" >
+							<a href="index.html" class="topbar__list__index__link">Biographie</a>
 						</li>
-						<li>
-							<a href="galerie.html">Galerie</a>
+						<li class= "topbar__list__index">
+							<a href="galerie.html" class="topbar__list__index__link">Galerie</a>
 						</li>
-						<li class="active">
-							<a href="bibliographie.html">Bibliographie</a>
+						<li class= "topbar__list__index">
+							<a href="bibliographie.html" class="topbar__list__index__link">Bibliographie</a>
 						</li>
-						<li>
-							<a href="liens.html">Liens</a>
+						<li class= "topbar__list__index">
+							<a href="liens.html" class="topbar__list__index__link">Liens</a>
 						</li>
-						<li>
-							<a href="pratiques.html">Pratique</a>
+						<li class= "topbar__list__index">
+							<a href="pratiques.html" class="topbar__list__index__link">Pratique</a>
 						</li>
 					</ul>
 				</nav>
 			</div> <!-- fin TOPBAR-->
-		</header>
+		</header> <!-- fin HEADER -->
 		<main>
-			
+			<section>
+				<div class="">
+					<img src="img/books/tome1.jpg" width ="336" height = "475" alt="Nicolas De Stael catalogue raisonné de l'oeuvre peint">
+					<h2 aria-level ="2">Nicolas De Stael : Catalogue raisonné de l'oeuvre peint</h2>
+					
+				</div>
+		 	</section>
 		</main>
 	</div> <!-- fin WRAP -->
-		<footer>
-		<p>Design By <span>Anthony Beaumecker</span></p>
-	</footer>
+	<footer class="copyright"> <!-- début FOOTER -->
+		<p class="copyright__design">Design By <span class="copyright__name">Anthony Beaumecker</span></p>
+	</footer> <!-- fin FOOTER -->
 </body>
 </html>
