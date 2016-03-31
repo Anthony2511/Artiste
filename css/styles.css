@@ -170,6 +170,9 @@ header {
     height: 3.7rem;
     line-height: 3.7rem;
     flex: 1; }
+    .topbar__list__index__link {
+      z-index: 1000;
+      display: block; }
 
 @media (max-width: 640px) {
   .topbar__list {
@@ -371,17 +374,37 @@ header {
   width: 965px;
   margin: 0 auto; }
   .books__list {
-    position: relative; }
+    position: relative;
+    margin-top: 135px; }
     .books__list__header {
       display: flex;
       flex-direction: row; }
       .books__list__header__title {
-        font-size: 30px;
+        font-size: 25px;
         font-family: 'roboto';
-        font-weight: normal; }
+        font-weight: normal;
+        margin-left: 20px;
+        color: #939393;
+        flex-direction: column; }
+        .books__list__header__title__one {
+          margin-bottom: 10px; }
+        .books__list__header__title__two {
+          font-size: 20px;
+          font-weight: 300; }
     .books__list__contenu {
       position: absolute;
-      left: 500px;
-      top: 200px; }
+      left: 406px;
+      top: 100px;
+      font-size: 20px; }
+      .books__list__contenu__link {
+        position: relative;
+        left: 480px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #939393; }
+      .books__list__contenu__detail {
+        margin-bottom: 30px; }
+        .books__list__contenu__detail__page {
+          margin-bottom: 20px; }
 
 /*# sourceMappingURL=styles.css.map */

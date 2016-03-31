@@ -9,35 +9,61 @@
     margin: 0 auto;
     &__list{
         position: relative;
+        margin-top: 135px;
         &__header{
             display: flex;
             flex-direction: row;
             &__photo{
             }
             &__title{
-                font-size: 30px;
+                font-size: 25px;
                 font-family: 'roboto';
                 font-weight: normal;
+                margin-left: 20px;
+                color: $colorTitleBook;
+                flex-direction: column;
+                &__one{
+                    margin-bottom: 10px;
+                }
+                &__two{
+                    font-size: 20px;
+                    font-weight: 300;
+                }
             }
         }
         &__contenu{
             position: absolute;
-            left: 500px;
-            top: 200px;
-            &__detail{
-                &__author{
+            left: 406px;
+            top: 100px;
+            font-size: 20px;
+            &__link{
+                position: relative;
+                left: 480px;
+                text-decoration: none;
+                font-weight: 500;
+                color: $colorTitleBook;
+                &__one{
 
                 }
+                &__two{
+
+                }
+            }
+            &__detail{
+                    margin-bottom: 30px;
+
+
                 &__editor{
 
                 }
                 &__page{
+                    margin-bottom: 20px;
+                }
+                &__resume{
 
                 }
             }
-            &__resume{
 
-            }
         }
     }
 }

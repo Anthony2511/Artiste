@@ -15,6 +15,10 @@
             height: 3.7rem;
             line-height: 3.7rem;
             flex: 1;
+            &__link{
+                z-index: 1000;
+                display: block;
+            }
         }
     }
  }
