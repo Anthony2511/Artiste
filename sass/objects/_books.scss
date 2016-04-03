@@ -1,6 +1,5 @@
 
 .livres{
-    background: url( "#{ $imgPath }livres.svg" ) no-repeat center;
     height: 100px;
     margin-top: 100px;
 }
@@ -16,18 +15,10 @@
             &__photo{
             }
             &__title{
-                font-size: 25px;
-                font-family: 'roboto';
-                font-weight: normal;
                 margin-left: 20px;
-                color: $colorTitleBook;
                 flex-direction: column;
                 &__one{
                     margin-bottom: 10px;
-                }
-                &__two{
-                    font-size: 20px;
-                    font-weight: 300;
                 }
             }
         }
@@ -35,24 +26,19 @@
             position: absolute;
             left: 406px;
             top: 100px;
-            font-size: 20px;
             &__link{
                 position: relative;
-                left: 480px;
-                text-decoration: none;
-                font-weight: 500;
-                color: $colorTitleBook;
+                left: -50px;
                 &__one{
-
+                    padding: 7px 5px;
+                    margin-right: 10px;
                 }
                 &__two{
-
+                    padding: 7px 5px;
                 }
             }
             &__detail{
-                    margin-bottom: 30px;
-
-
+                    margin: 50px 0 30px 20px;
                 &__editor{
 
                 }

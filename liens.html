@@ -3,47 +3,58 @@
 <head>
 	<meta charset="utf-8">
 	<title>Artiste</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<div id="wrap">
-		<header>
-			<img src="img/photo.jpg" alt="photo de la biographie" width="300" height="258">
-			<h1 role="heading" aria-level="1">
-				<a href="#"><span class="titre">Nic</span>olas <span>De Stael</span></a>
-			</h1>
-			<div class="topbar">
+		<header> <!-- début HEADER -->
+			<div class="topbar"> <!-- début TOPBAR -->
 				<nav>
-					<h2 role="heading" aria-level="2">
+					<h1 aria-level="1" class="topbar__title">
 						Main navigation menu
-					</h2>
-					<ul>
-						<li>
-							<a href="index.html">Biographie</a>
+					</h1>
+					<ul class="topbar__list">
+						<li class= "topbar__list__index" >
+							<a href="index.html" class="topbar__list__index__link">Biographie</a>
 						</li>
-						<li>
-							<a href="galerie.html">Galerie</a>
+						<li class= "topbar__list__index">
+							<a href="galerie.html" class="topbar__list__index__link">Galerie</a>
 						</li>
-						<li>
-							<a href="bibliographie.html">Bibliographie</a>
+						<li class= "topbar__list__index">
+							<a href="bibliographie.html" class="topbar__list__index__link">Bibliographie</a>
 						</li>
-						<li class="active">
-							<a href="liens.html">Liens</a>
+						<li class= "topbar__list__index">
+							<a href="liens.html" class="topbar__list__index__link">Liens</a>
 						</li>
-						<li>
-							<a href="pratiques.html">Pratique</a>
+						<li class= "topbar__list__index">
+							<a href="pratiques.html" class="topbar__list__index__link">Pratique</a>
 						</li>
 					</ul>
 				</nav>
 			</div> <!-- fin TOPBAR-->
-		</header>
+		</header> <!-- fin HEADER -->
 		<main>
-			
+			<div class="link">
+				<div class="link__bloc">
+					<a href="http://www.artmajeur.com/fr/jeanne-bucher/stael.html" class="link__bloc__site">Officiel des arts</a>
+				</div>
+				<div class="link__bloc">
+					<a href="http://www.maulpoix.net/nicolas.html" class="link__bloc__site">Maulpoix</a>
+				</div>
+				<div class="link__bloc">
+					<a href="http://www.postershop.com/De-Stael-Nicolas-p.html" class="link__bloc__site">Poster shop</a>
+				</div>
+				<div class="link__bloc">
+					<a href="http://myclimatspainters.free.fr/stael.htm" class="link__bloc__site">My climats painters</a>
+				</div>
+				<div class="link__bloc">
+					<a href="http://pro.wanadoo.fr/art-deco.france/stael_f.htm" class="link__bloc__site">Wanadoo</a>
+				</div>
+			</div>
 		</main>
 	</div> <!-- fin WRAP -->
-		<footer>
-		<p>Design By <span>Anthony Beaumecker</span></p>
-	</footer>
+	<footer class="copyright"> <!-- début FOOTER -->
+		<p class="copyright__design">Design By <span class="copyright__name">Anthony Beaumecker</span></p>
+	</footer> <!-- fin FOOTER -->
 </body>
 </html>

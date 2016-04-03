@@ -1,0 +1,42 @@
+
+.livres{
+    background: url( "#{ $imgPath }livres.svg" ) no-repeat center;
+}
+.books{
+    &__list{
+        &__header{
+            &__title{
+                font-size: 25px;
+                font-family: 'roboto';
+                font-weight: normal;
+                color: $colorTitleBook;
+                &__two{
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+            }
+        }
+        &__contenu{
+            font-size: 20px;
+            &__link{
+                font-weight: 500;
+                color: $colorTitleBook;
+
+                &__one{
+                    text-decoration: none;
+                    border: 1px solid $colorTitleBook;
+                    border-radius: 5px;
+                    background-color: white;
+                    color: $colorTitleBook;
+                }
+                &__two{
+                    text-decoration: none;
+                    border: 1px solid $colorTitleBook;
+                    border-radius: 5px;
+                    background-color: white;
+                    color: $colorTitleBook;
+                }
+            }
+        }
+    }
+}
