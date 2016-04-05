@@ -303,6 +303,40 @@ header {
         .books__list__contenu__detail__page {
           margin-bottom: 20px; }
 
+.lien {
+  height: 100px;
+  margin-top: 100px; }
+
+.ch-grid {
+  margin: 100px 0 250px 0;
+  padding: 0;
+  display: block;
+  width: 100%; }
+  .ch-grid__list {
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    margin: 20px; }
+    .ch-grid__list__item {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .ch-grid__list__item__info {
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+        .ch-grid__list__item__info__title {
+          position: relative;
+          margin: 0 30px;
+          padding: 65px 0 0 0;
+          height: 60px; }
+        .ch-grid__list__item__info__text {
+          padding: 10px 5px;
+          margin: 0 30px; }
+          .ch-grid__list__item__info__text__link {
+            display: block;
+            padding-top: 4px; }
+
 /* Artiste
  *
  * /sass/components/_block.scss - Main stylesheet
@@ -431,72 +465,49 @@ header {
       color: #939393; }
 
 .lien {
-  background: url("../img/lien.svg") no-repeat center;
-  height: 100px;
-  margin-top: 100px; }
+  background: url("../img/lien.svg") no-repeat center; }
 
 .ch-grid {
-  margin: 100px 0 250px 0;
-  padding: 0;
   list-style: none;
-  display: block;
-  text-align: center;
-  width: 100%; }
-  .ch-grid__list {
-    width: 220px;
-    height: 220px;
-    display: inline-block;
-    margin: 20px; }
-    .ch-grid__list__item {
-      width: 100%;
-      height: 100%;
+  text-align: center; }
+  .ch-grid__list__item {
+    border-radius: 50%;
+    cursor: default;
+    box-shadow: inset 0 0 0 0 rgba(181, 180, 171, 0.6), inset 0 0 0 16px rgba(204, 203, 193, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out; }
+    .ch-grid__list__item:hover {
+      box-shadow: inset 0 0 0 110px rgba(181, 180, 171, 0.2), inset 0 0 0 16px rgba(204, 203, 193, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1); }
+    .ch-grid__list__item__info {
       border-radius: 50%;
-      position: relative;
-      cursor: default;
-      box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
-      transition: all 0.4s ease-in-out; }
-      .ch-grid__list__item:hover {
-        box-shadow: inset 0 0 0 110px rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1); }
-      .ch-grid__list__item__info {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        overflow: hidden;
-        opacity: 0;
-        transition: all 0.4s ease-in-out;
-        transform: scale(0);
-        backface-visibility: hidden; }
-        .ch-grid__list__item__info__title {
-          color: #fff;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+      transform: scale(0);
+      backface-visibility: hidden; }
+      .ch-grid__list__item__info__title {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 22px;
+        font-family: 'roboto';
+        font-weight: 500;
+        text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.3); }
+      .ch-grid__list__item__info__text {
+        color: #fff;
+        font-style: italic;
+        font-size: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.5); }
+        .ch-grid__list__item__info__text__link {
+          color: rgba(0, 0, 0, 0.6);
+          font-style: normal;
+          font-weight: 700;
           text-transform: uppercase;
-          position: relative;
-          letter-spacing: 2px;
-          font-size: 22px;
-          margin: 0 30px;
-          padding: 65px 0 0 0;
-          height: 110px;
-          font-family: 'Open Sans', Arial, sans-serif;
-          text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.3); }
-        .ch-grid__list__item__info__text {
-          color: #fff;
-          padding: 10px 5px;
-          font-style: italic;
-          margin: 0 30px;
-          font-size: 12px;
-          border-top: 1px solid rgba(255, 255, 255, 0.5); }
-          .ch-grid__list__item__info__text__link {
-            display: block;
-            color: rgba(255, 255, 255, 0.7);
-            font-style: normal;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 9px;
-            letter-spacing: 1px;
-            padding-top: 4px;
-            font-family: 'Open Sans', Arial, sans-serif; }
-            .ch-grid__list__item__info__text__link:hover {
-              color: rgba(255, 242, 34, 0.8); }
+          font-size: 13px;
+          letter-spacing: 1px;
+          font-family: 'roboto';
+          font-weight: normal; }
+          .ch-grid__list__item__info__text__link:hover {
+            color: rgba(255, 242, 34, 0.8); }
 
 .ch-grid__list__item:hover .ch-grid__list__item__info {
   opacity: 1;
@@ -516,5 +527,25 @@ header {
 
 .ch-img-5 {
   background-image: url("../img/fete.jpg"); }
+
+.pratiques {
+  background: url("../img/form.svg") no-repeat center;
+  height: 100px;
+  margin-top: 100px; }
+
+.pratique {
+  width: 965px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .pratique__info {
+    margin-right: 50px; }
+    .pratique__info__title {
+      color: #939393;
+      font-size: 30px; }
+    .pratique__info__description__image {
+      background: url("../img/location.svg") no-repeat center;
+      height: 50px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,26 @@
+.pratiques{
+    background: url( "#{ $imgPath }form.svg" ) no-repeat center;
+    height: 100px;
+    margin-top: 100px;
+}
+
+.pratique{
+    width: $containerWidth;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &__info{
+        margin-right: 50px;
+        &__title{
+            color: $colorTitleBook;
+            font-size: 30px;
+        }
+        &__description{
+            &__image{
+                background: url( "#{ $imgPath }location.svg" ) no-repeat center;
+                height: 50px;
+                }
+            }
+        }
+}
