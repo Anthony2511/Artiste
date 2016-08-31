@@ -23,13 +23,56 @@
      }
      &__contenu{
          &__text{
-             color: $colorBlock;
-             line-height: 1.25;
+             color: $backgroundColorFooter;
+             line-height: 1.55em;
             font-family: $roboto;
-             font-weight: 300;
-             font-size: 20px;
+             font-weight: lighter;
+             font-size: 18px;
              hyphens: auto;
              word-wrap: break-word;
          }
+         &__text + &__text{
+             margin-left: 50px;
+         }
      }
  }
+ @media screen and (max-width:950px) {
+     .block{
+         padding: 0 1.5625em;
+         &__contenu{
+             display: flex;
+             flex-direction: column;
+             max-width: 400px;
+             margin: 0 auto;
+             &__text + &__text{
+                margin-left: 0;
+             }
+             &__profil{
+                 & img{
+                     max-width: 100%;
+                     height: auto;
+                     margin-bottom: 20px;
+                 }
+             }
+         }
+     }
+ }
+
+@media (max-width: 640px){
+    .background{
+        display: none;
+    }
+    .block{
+        &__contenu{
+            &__profil{
+                margin: 0 auto;
+                & img{
+                    margin-bottom: 20px;
+                }
+            }
+            &__text{
+                margin: 0 auto;
+            }
+        }
+    }
+}

@@ -5,22 +5,116 @@
 }
 
 .pratique{
-    width: $containerWidth;
+    max-width: $containerWidth;
     margin: 100px auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    padding: 0 25px;
+    &__button{
+        background-color: $colorTitleBook;
+        padding: 10px 20px;
+        font-size: 20px;
+        border: 1px solid $colorWhite;
+        border-radius: 10px;
+        color: $colorWhite;
+        float: right;
+        &:hover{
+            background-color: $colorWhite;
+            border: 1px solid $colorTitleBook;
+            color: $colorTitleBook;
+        }
+    }
+    &__label{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: $backgroundColorTopbarHover;
+    }
+    &__input{
+        border: 1px solid $colorTitleBook;
+        padding: 10px;
+        width: 300px;
+        margin-bottom: 15px;
+    }
     &__info{
         margin-right: 50px;
+        border-right: 1px solid $colorTitleBook;
+        padding-right: 30px;
+        }
         &__title{
             color: $colorTitleBook;
-            font-size: 30px;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 100px;
         }
         &__description{
-            &__image{
-                background: url( "#{ $imgPath }location.svg" ) no-repeat center;
-                height: 50px;
+
+            &__detail{
+                color: $colorTitleBook;
+                font-size: 18px;
+                font-weight: 100;
+                text-align: center;
+                margin-top: 30px;
+                &--location{
+                    &::before{
+                        content: url('../img/location.png');
+                        text-align: center;
+                        display: block;
+                    }
+                }
+                &--date{
+                    &::before{
+                        content: url('../img/date.png');
+                        text-align: center;
+                        display: block;
+                    }
+                }
+                &--ouvert{
+                    &::before{
+                        content: url('../img/time.png');
+                        text-align: center;
+                        display: block;
+                    }
+                }
+                &--prix{
+                    &::before{
+                        content: url('../img/prix.png');
+                        text-align: center;
+                        display: block;
+                    }
+                }
+                &--tel{
+                    &::before{
+                        content: url('../img/tel.png');
+                        text-align: center;
+                        display: block;
+                    }
                 }
             }
         }
+}
+@media screen and ( max-width: 800px) {
+    .pratique{
+        display: flex;
+        flex-direction: column;
+        &__info{
+            margin-right: 0;
+            border-bottom: 1px solid $colorTitleBook;
+            border-right: 0;
+            padding-bottom: 50px;
+        }
+        &__formulaire{
+            text-align: center;
+            margin-top: 20px;
+        }
+        &__label{
+            margin: 0 auto;
+            text-align: left;
+            width: 300px;
+            margin-bottom: 10px;
+        }
+        &__button{
+            float: none;
+        }
+    }
 }

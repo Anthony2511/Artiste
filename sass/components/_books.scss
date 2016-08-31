@@ -9,7 +9,7 @@
                 font-size: 25px;
                 font-family: 'roboto';
                 font-weight: normal;
-                color: $colorTitleBook;
+                 color: $colorTitleBook;
                 &__two{
                     font-size: 20px;
                     font-weight: 300;
@@ -17,24 +17,28 @@
             }
         }
         &__contenu{
-            font-size: 20px;
-            &__link{
-                font-weight: 500;
-                color: $colorTitleBook;
+            font-size: 18px;
+            line-height: 1.3em;
+            border: 1px solid $backgroundColorTopbarHover;
+            border-radius: 10px;
+            background-color: #f4f3e3;
+            color: $backgroundColorTopbarHover;
+            padding: 10px;
+        }
+    }
+}
+@media screen and (max-width:975px) {
+    .books{
+        &__list{
+            display: block;
+            &__contenu{
 
-                &__one{
-                    text-decoration: none;
-                    border: 1px solid $colorTitleBook;
-                    border-radius: 5px;
-                    background-color: white;
-                    color: $colorTitleBook;
-                }
-                &__two{
-                    text-decoration: none;
-                    border: 1px solid $colorTitleBook;
-                    border-radius: 5px;
-                    background-color: white;
-                    color: $colorTitleBook;
+            }
+            &__header{
+                &__title{
+                    &__two{
+
+                    }
                 }
             }
         }

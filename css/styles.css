@@ -33,36 +33,29 @@
  */
 @font-face {
   font-family: 'roboto';
-  src: url("roboto-bold-webfont.eot");
-  src: url("roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("roboto-bold-webfont.woff2") format("woff2"), url("roboto-bold-webfont.woff") format("woff"), url("roboto-bold-webfont.ttf") format("truetype"), url("roboto-bold-webfont.svg#robotobold") format("svg");
+  src: url("../fonts/roboto-bold-webfont.eot");
+  src: url("../fonts/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff"), url("../fonts/roboto-bold-webfont.ttf") format("truetype"), url("../fonts/roboto-bold-webfont.svg#robotobold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'roboto';
-  src: url("roboto-light-webfont.eot");
-  src: url("roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("roboto-light-webfont.woff2") format("woff2"), url("roboto-light-webfont.woff") format("woff"), url("roboto-light-webfont.ttf") format("truetype"), url("roboto-light-webfont.svg#robotolight") format("svg");
+  src: url("../fonts/roboto-light-webfont.eot");
+  src: url("../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-webfont.svg#robotolight") format("svg");
   font-weight: lighter;
   font-style: normal; }
 
 @font-face {
   font-family: 'roboto';
-  src: url("roboto-medium-webfont.eot");
-  src: url("roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("roboto-medium-webfont.woff2") format("woff2"), url("roboto-medium-webfont.woff") format("woff"), url("roboto-medium-webfont.ttf") format("truetype"), url("roboto-medium-webfont.svg#robotomedium") format("svg");
+  src: url("../fonts/roboto-medium-webfont.eot");
+  src: url("../fonts/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff"), url("../fonts/roboto-medium-webfont.ttf") format("truetype"), url("../fonts/roboto-medium-webfont.svg#robotomedium") format("svg");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'roboto';
-  src: url("robotocondensed-light-webfont.eot");
-  src: url("robotocondensed-light-webfont.eot?#iefix") format("embedded-opentype"), url("robotocondensed-light-webfont.woff2") format("woff2"), url("robotocondensed-light-webfont.woff") format("woff"), url("robotocondensed-light-webfont.ttf") format("truetype"), url("robotocondensed-light-webfont.svg#roboto_condensedlight") format("svg");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'roboto';
-  src: url("roboto-regular-webfont.eot");
-  src: url("roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("roboto-regular-webfont.woff2") format("woff2"), url("roboto-regular-webfont.woff") format("woff"), url("roboto-regular-webfont.ttf") format("truetype"), url("roboto-regular-webfont.svg#robotoregular") format("svg");
+  src: url("../fonts/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -187,11 +180,11 @@ header {
  * started at 02/03/2016
  */
 .background {
-  height: 92vh; }
+  height: 94vh; }
 
 .block {
-  margin: 100px auto;
-  width: 965px; }
+  margin: 150px auto;
+  max-width: 965px; }
   .block__lampe {
     height: 100px; }
   .block__title {
@@ -203,31 +196,7 @@ header {
     .block__contenu__profil {
       margin-right: 50px; }
     .block__contenu__text {
-      width: 400px; }
-
-@media (max-width: 1024px) {
-  .block {
-    width: auto; }
-    .block__contenu__profil img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 20px; } }
-
-@media (max-width: 640px) {
-  .background {
-    display: none; }
-  .block {
-    width: auto; }
-    .block__contenu {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .block__contenu__profil {
-        margin: 0 auto; }
-        .block__contenu__profil img {
-          margin-bottom: 20px; }
-      .block__contenu__text {
-        margin: 0 auto; } }
+      max-width: 400px; }
 
 /* Artiste
  *
@@ -258,7 +227,7 @@ header {
       height: auto; }
     .images__bloc__list {
       position: absolute;
-      bottom: 0;
+      top: 0;
       width: 300px;
       display: block;
       height: 100%;
@@ -273,35 +242,33 @@ header {
   margin-top: 100px; }
 
 .books {
-  width: 965px;
-  margin: 0 auto; }
+  max-width: 965px;
+  margin: 0 auto;
+  padding: 0 25px; }
   .books__list {
     position: relative;
     margin-top: 135px; }
     .books__list__header {
       display: flex;
       flex-direction: row; }
+      .books__list__header__photo {
+        max-width: 100%;
+        height: 100%; }
       .books__list__header__title {
-        margin-left: 20px;
-        flex-direction: column; }
+        margin-left: 20px; }
         .books__list__header__title__one {
           margin-bottom: 10px; }
     .books__list__contenu {
       position: absolute;
-      left: 406px;
+      left: 40%;
       top: 100px; }
-      .books__list__contenu__link {
-        position: relative;
-        left: -50px; }
-        .books__list__contenu__link__one {
-          padding: 7px 5px;
-          margin-right: 10px; }
-        .books__list__contenu__link__two {
-          padding: 7px 5px; }
       .books__list__contenu__detail {
         margin: 50px 0 30px 20px; }
-        .books__list__contenu__detail__page {
+        .books__list__contenu__detail__info {
           margin-bottom: 20px; }
+        .books__list__contenu__detail__info-list {
+          font-size: 20px;
+          font-weight: bold; }
 
 .lien {
   height: 100px;
@@ -361,13 +328,41 @@ header {
   font-size: 20px; }
 
 .block__contenu__text {
-  color: black;
-  line-height: 1.25;
+  color: #969696;
+  line-height: 1.55em;
   font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: lighter;
+  font-size: 18px;
   hyphens: auto;
   word-wrap: break-word; }
+
+.block__contenu__text + .block__contenu__text {
+  margin-left: 50px; }
+
+@media screen and (max-width: 950px) {
+  .block {
+    padding: 0 1.5625em; }
+    .block__contenu {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto; }
+      .block__contenu__text + .block__contenu__text {
+        margin-left: 0; }
+      .block__contenu__profil img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px; } }
+
+@media (max-width: 640px) {
+  .background {
+    display: none; }
+  .block__contenu__profil {
+    margin: 0 auto; }
+    .block__contenu__profil img {
+      margin-bottom: 20px; }
+  .block__contenu__text {
+    margin: 0 auto; } }
 
 /* Artiste
  *
@@ -378,7 +373,6 @@ header {
  */
 .topbar {
   font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: lighter;
   background-color: #8A8A8A; }
   .topbar__list__index {
     text-align: center; }
@@ -418,7 +412,8 @@ header {
   font-size: 20px; }
 
 .images {
-  -webkit-columns: 3; }
+  -webkit-columns: 3;
+  -moz-columns: 3; }
   .images__bloc:hover .images__bloc__list {
     opacity: 1;
     overflow: hidden;
@@ -434,6 +429,13 @@ header {
     .images__bloc__list__title {
       font-size: 25px; }
 
+@media screen and (max-width: 1064px) {
+  .images {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    margin: 0 auto;
+    width: 300px; } }
+
 .livres {
   background: url("../img/livres.svg") no-repeat center; }
 
@@ -441,28 +443,23 @@ header {
   font-size: 25px;
   font-family: 'roboto';
   font-weight: normal;
-  color: #939393; }
+  color: #c9c6a9; }
   .books__list__header__title__two {
     font-size: 20px;
     font-weight: 300; }
 
 .books__list__contenu {
-  font-size: 20px; }
-  .books__list__contenu__link {
-    font-weight: 500;
-    color: #939393; }
-    .books__list__contenu__link__one {
-      text-decoration: none;
-      border: 1px solid #939393;
-      border-radius: 5px;
-      background-color: white;
-      color: #939393; }
-    .books__list__contenu__link__two {
-      text-decoration: none;
-      border: 1px solid #939393;
-      border-radius: 5px;
-      background-color: white;
-      color: #939393; }
+  font-size: 18px;
+  line-height: 1.3em;
+  border: 1px solid #BABABA;
+  border-radius: 10px;
+  background-color: #f4f3e3;
+  color: #BABABA;
+  padding: 10px; }
+
+@media screen and (max-width: 975px) {
+  .books__list {
+    display: block; } }
 
 .lien {
   background: url("../img/lien.svg") no-repeat center; }
@@ -534,18 +531,87 @@ header {
   margin-top: 100px; }
 
 .pratique {
-  width: 965px;
+  max-width: 965px;
   margin: 100px auto;
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  padding: 0 25px; }
+  .pratique__button {
+    background-color: #c9c6a9;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    float: right; }
+    .pratique__button:hover {
+      background-color: white;
+      border: 1px solid #c9c6a9;
+      color: #c9c6a9; }
+  .pratique__label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #BABABA; }
+  .pratique__input {
+    border: 1px solid #c9c6a9;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 15px; }
   .pratique__info {
-    margin-right: 50px; }
-    .pratique__info__title {
-      color: #939393;
-      font-size: 30px; }
-    .pratique__info__description__image {
-      background: url("../img/location.svg") no-repeat center;
-      height: 50px; }
+    margin-right: 50px;
+    border-right: 1px solid #c9c6a9;
+    padding-right: 30px; }
+  .pratique__title {
+    color: #c9c6a9;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px; }
+  .pratique__description__detail {
+    color: #c9c6a9;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 30px; }
+    .pratique__description__detail--location::before {
+      content: url("../img/location.png");
+      text-align: center;
+      display: block; }
+    .pratique__description__detail--date::before {
+      content: url("../img/date.png");
+      text-align: center;
+      display: block; }
+    .pratique__description__detail--ouvert::before {
+      content: url("../img/time.png");
+      text-align: center;
+      display: block; }
+    .pratique__description__detail--prix::before {
+      content: url("../img/prix.png");
+      text-align: center;
+      display: block; }
+    .pratique__description__detail--tel::before {
+      content: url("../img/tel.png");
+      text-align: center;
+      display: block; }
+
+@media screen and (max-width: 800px) {
+  .pratique {
+    display: flex;
+    flex-direction: column; }
+    .pratique__info {
+      margin-right: 0;
+      border-bottom: 1px solid #c9c6a9;
+      border-right: 0;
+      padding-bottom: 50px; }
+    .pratique__formulaire {
+      text-align: center;
+      margin-top: 20px; }
+    .pratique__label {
+      margin: 0 auto;
+      text-align: left;
+      width: 300px;
+      margin-bottom: 10px; }
+    .pratique__button {
+      float: none; } }
 
 /*# sourceMappingURL=styles.css.map */

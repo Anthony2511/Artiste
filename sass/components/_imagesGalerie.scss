@@ -10,6 +10,7 @@
 }
 .images{
     -webkit-columns: 3;
+    -moz-columns:3;
 
     &__bloc{
         &:hover &__list{
@@ -29,5 +30,13 @@
             	font-size: 25px;
             }
         }
+    }
+}
+@media screen and (max-width:1064px) {
+    .images{
+        -webkit-columns: 1;
+        -moz-columns:1;
+        margin: 0 auto;
+        width: 300px;
     }
 }
