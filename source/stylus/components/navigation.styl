@@ -1,0 +1,163 @@
+.navigation
+  font-size s(16,16)
+  letter-spacing s(1.6,16)
+  text-align center
+  font-weight: 100
+  &__logo
+    margin: 0  s(30,16)
+    &:before
+      icon( 'logo-artiste' )
+      font-size: s(30,16)
+      color: $white
+  &__title
+    hidden()
+  &__toggle
+    position relative
+    z-index 2
+    display block
+    margin 0
+    padding s(8, 16) 0
+    background-color #ddc
+    text-decoration none
+    text-align center
+    font-size s(21,16)
+    color #333
+    &:hover
+    &:focus
+      color #eee
+      background-color $backgroundColorNav
+  &__toggle-text
+    font-size: s(8,16)
+    display: block
+  &__menu
+    position relative
+    z-index 1
+    background-color #333
+    border 0
+    margin -1px auto
+    overflow hidden
+    padding 0
+    max-height 1px
+    min-height 0
+    clip rect(0 0 0 0)
+    box-shadow inset 0 0 3px 3px rgba(0, 0, 0, 0.2)
+    transition max-height 600ms ease-out, min-height 600ms ease-in, padding 600ms ease-in
+  &__menu-link
+    transition color 800ms ease-in-out, background 800ms ease-in-out
+    display block
+    padding s(10,16) 0
+    background-color transparent
+    text-decoration none
+    text-align center
+    font-size: 1.2em;
+    color #eee
+    border-radius s(2,16)
+    &:hover
+    &:focus
+      color #eeeeaa
+      background #4d4d4d
+  &__expanded-toggle
+    display none
+
+
+
+
+
+
+/* TRIER EN BEM */
+.no-js .navigation__menu, .expanded-mobile-menu {
+  transition: max-height 800ms ease-in, min-height 500ms ease-out, padding 400ms ease-in;
+  /*min/max heights allow me to css transition to height auto for WordPress menus with unknown number of items*/
+  clip: auto;
+  min-height: 8em;
+  max-height: 100em;
+  padding: 0.5em 0;
+}
+
+@media only screen and (min-width: 470px) {
+  /*481 ish px*/
+  .navigation__menu .navigation__menu-item {
+    float: left;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 740px)
+  .navigation .navigation__toggle
+    display: none;
+  .navigation__menu, .no-js .navigation__menu, .expanded-mobile-menu
+    /* no longer hidden by default! */
+    margin: 0;
+    min-height: 0;
+    max-height: 999em;
+    border-radius: 0;
+    overflow: visible;
+    padding: s(20,16) 0
+    background: #333;
+    box-shadow: inset 0 0 3px 3px rgba(0, 0, 0, 0.2);
+    /* end .navigation__menu ul .navigation__menu-item */
+  .navigation__menu .navigation__menu-item, .no-js .navigation__menu .navigation__menu-item, .expanded-mobile-menu .navigation__menu-item
+    float: none;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    /* DROP DOWNS */
+    /* showing sub-menus */
+  .navigation__menu .navigation__menu-item .navigation__menu-link, .no-js .navigation__menu .navigation__menu-item .navigation__menu-link, .expanded-mobile-menu .navigation__menu-item .navigation__menu-link
+    padding: 0.3em 1em;
+    color: #eee
+  .navigation
+    &__menu-item,.navigation__menu .no-js,.navigation__menu .expanded-mobile-menu
+      &:hover
+      &:focus
+        color: #eeeeaa;
+        background: #383838;
+  .navigation__menu .navigation__menu-item ul.children,
+  .no-js .navigation__menu .navigation__menu-item ul.children,
+  .expanded-mobile-menu .navigation__menu-item ul.children
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 0;
+    white-space: nowrap;
+    transition: max-height 400ms ease-out, min-height 500ms ease-in, padding 500ms ease-out, opacity 500ms ease-in;
+    background: #383838;
+    text-align: left;
+    border-radius: 0 4px 4px 4px;
+    /* visually hidden */
+    opacity: 0;
+    border: 0;
+    margin: -1px 0;
+    overflow: hidden;
+    padding: 0;
+    max-height: 1px;
+    min-height: 0;
+  .navigation__menu .navigation__menu-item ul.children .navigation__menu-item,
+  .no-js .navigation__menu .navigation__menu-item ul.children .navigation__menu-item,
+  .expanded-mobile-menu .navigation__menu-item ul.children .navigation__menu-item
+    display: block;
+    padding: 0.2em 0.4em 0;
+    /* could go deeper here... */
+  .navigation__menu .navigation__menu-item ul.children .navigation__menu-item .navigation__menu-link,
+  .no-js .navigation__menu .navigation__menu-item ul.children .navigation__menu-item .navigation__menu-link,
+  .expanded-mobile-menu .navigation__menu-item ul.children .navigation__menu-item .navigation__menu-link
+    font-size: 1em;
+    padding: 0.2em 0.5em 0.2em 0.8em;
+    display: block;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+    background: transparent;
+  .navigation__menu .navigation__menu-item:hover ul, .navigation__menu .navigation__menu-item.focused ul, .no-js .navigation__menu .navigation__menu-item:hover ul, .no-js .navigation__menu .navigation__menu-item.focused ul, .expanded-mobile-menu .navigation__menu-item:hover ul, .expanded-mobile-menu .navigation__menu-item.focused ul
+    transition: max-height 800ms ease-in, min-height 500ms ease-out, padding 500ms ease-out, opacity 800ms ease-out;
+    /* again using min/max heights to deal with unknown length of lists */
+    min-height: 8em;
+    max-height: 100em;
+    padding: 0.4em 0;
+    opacity: 1;
+  .navigation__menu .navigation__menu-item:hover ul ul, .navigation__menu .navigation__menu-item.focused ul ul, .no-js .navigation__menu .navigation__menu-item:hover ul ul, .no-js .navigation__menu .navigation__menu-item.focused ul ul, .expanded-mobile-menu .navigation__menu-item:hover ul ul, .expanded-mobile-menu .navigation__menu-item.focused ul ul
+    min-height: 0;
+    padding: 0;
+  /* end .navigation__menu */
+/* end media query*/

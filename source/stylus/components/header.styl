@@ -1,1 +1,19 @@
-
+.head
+  background url('../images/backgroundHeader.png') no-repeat top center/cover
+  height: 100vh
+  position: relative
+  &__title-info
+    hidden()
+  &__bloc
+    position absolute
+    width: 100%
+    text-align: center
+    top: 20em
+    color $colorTextHeader
+  &__title
+    font-size: s(60,16)
+    font-weight: 100
+    padding: s(10,16) 0
+    text-transform: uppercase
+  &__text
+    font-size: s(40,16)

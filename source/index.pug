@@ -1,23 +1,41 @@
 doctype html
 html( lang="fr" )
-    head
-        meta( charset="utf-8" )
-        title Le site de Nicolas De Stael
-        link( rel="stylesheet", href="css/app.css" )
+  head
+    include template/_meta
+  header.head
+    h1.head__title-info( aria-level="1") Site de Nicolas de Stael
+    nav.navigation
+      h1.navigation__title( aria-level="1" ) Navigation principale
+      a.navigation__toggle( href="#head-nav" )
+        span.icon-menu( aria-hidden="true" )
+        span.navigation__toggle-text Menu
+      ul.navigation__menu( id="main-menu" )
+        li.navigation__menu-item
+          a.navigation__menu-link( href="#" ) Bibliographie
+        li.navigation__menu-item
+          a.navigation__menu-link( href="#" ) Galerie
+        li.navigation__menu-item
+          span.navigation__logo
+        li.navigation__menu-item
+          a.navigation__menu-link( href="#" )  Liens
+        li.navigation__menu-item
+          a.navigation__menu-link( href="#" ) Pratique
+    .head__bloc
+      h1.head__title( aria-level="2") Nicolas De Stael
+      span.head__text Un artiste et un peintre d'exception
+  body
+    section.biographie
+      .bloc-bio
+        h2.title Biographie
+        figure.biographie__figure
+          img( src="../images/nicolas.jpg" alt="Photo de Nicolas De Stael" width="1600" height="1600" )
+        q.biographie__citation(lang="fr" title="Citation connue de Nicolas De Stael") L'espace pictural est un mur, mais tous les oiseaux du monde y volent librement, à toutes profondeurs.
+        p.biographie__text Nicolas de Stael, à l’état civil, Baron Nicolaï Vladimirovitch Staël von Holstein,est un  peintre français d’origine russe est né à Saint-Pétersbourg en 1914.Au décès de ses parents en 1922, il est recueilli par un couple de russes installés à Bruxelles.Il suivra dans cette ville les cours de l’Académie de Bruxelles et de Saint Gilles.Il s’installe à Paris, dans les années 1930 et voyage en Europe et au Maroc.Il y rencontre la peintre Jeannine Guillou (Janine Teslar),sa compagne jusqu’à sa mort en 1946, dont il ne se remettra jamais.
 
-    header
-        h1( aria-level="1") Site de Nicolas de Stael
-        nav
-            h1(aria-level="2") Navigation principale
-            ul
-                li
-                    a(href="#") Bibliographie
-                li
-                    a(href="#")
-                li
-                    a(href="#")  Liens
-                li
-                    a(href="#") Pratique
-    body
-        #wrap
-            h2(aria-level="2") Biographie
+    #wrap
+
+
+
+        footer
+
+        include template/_scripts
