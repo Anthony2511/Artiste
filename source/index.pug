@@ -26,16 +26,21 @@ html( lang="fr" )
   body
     section.biographie
       .bloc-bio
-        h2.title Biographie
+        h2.title( aria-level="2") Biographie
         figure.biographie__figure
           img( src="../images/nicolas.jpg" alt="Photo de Nicolas De Stael" width="1600" height="1600" )
         q.biographie__citation(lang="fr" title="Citation connue de Nicolas De Stael") L'espace pictural est un mur, mais tous les oiseaux du monde y volent librement, à toutes profondeurs.
-        p.biographie__text Nicolas de Stael, à l’état civil, Baron Nicolaï Vladimirovitch Staël von Holstein,est un  peintre français d’origine russe est né à Saint-Pétersbourg en 1914.Au décès de ses parents en 1922, il est recueilli par un couple de russes installés à Bruxelles.Il suivra dans cette ville les cours de l’Académie de Bruxelles et de Saint Gilles.Il s’installe à Paris, dans les années 1930 et voyage en Europe et au Maroc.Il y rencontre la peintre Jeannine Guillou (Janine Teslar),sa compagne jusqu’à sa mort en 1946, dont il ne se remettra jamais.
-
+        p.biographie__text Nicolas De Stael, à l’état civil, Baron Nicolaï Vladimirovitch Staël von Holstein,est un  peintre français d’origine russe est né à Saint-Pétersbourg en 1914.Au décès de ses parents en 1922, il est recueilli par un couple de russes installés à Bruxelles.Il suivra dans cette ville les cours de l’Académie de Bruxelles et de Saint Gilles.Il s’installe à Paris, dans les années 1930 et voyage en Europe et au Maroc.Il y rencontre la peintre Jeannine Guillou (Janine Teslar),sa compagne jusqu’à sa mort en 1946, dont il ne se remettra jamais.
     #wrap
-
-
-
-        footer
-
-        include template/_scripts
+      section.exposition
+        .exposition__bloc-text
+          h2.exposition__title( aria-level="2") Exposition 2016-2017
+          p.exposition__text Venez voir l'exposition de Nicolas De Stael consacrée à ses oeuvres les plus connues. Profitez de cette occasion pour en apprendre plus sur l'artiste.
+          span.exposition__span Pour plus d'informations, notre page
+          a.exposition__link(href="#") &nbsp;Pratique
+        figure.exposition__bloc-image
+          img(src="../images/bleu.jpg" alt="Image de l'exposition" width="1255" height="860")
+    footer.footer
+      span.footer__copyright Design by&nbsp;
+      a.footer__link Anthony Beaumecker
+    include template/_scripts
