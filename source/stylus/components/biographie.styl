@@ -1,25 +1,49 @@
 .biographie
-  max-width: 100%
-  background-color: $backgroundColorInfoBooks
-  color: $colorText
-  line-height: 1.6
+  max-width : 100%
+  background-color : $backgroundColorInfoBooks
+  color : $colorText
+  line-height : 1.6
   &__figure
-    overflow: hidden;
-    border-radius: s(100,16)
-    max-width: s(200,16)
-    height: s(200,16)
-    margin: 0 auto s(50,16)
+    overflow : hidden;
+    border-radius : s(100,16)
+    max-width : s(200,16)
+    height : s(200,16)
+    margin : 0 auto s(50,16)
   &__citation
-    font-size: s(25,16)
-    font-weight: 500
-    text-align: center
+    font-size : s(25,16)
+    font-weight : 500
+    text-align : center
     &:before
       icon( 'quotation-mark' )
-      color: $colorLightBlue
-      font-size: s(30,16)
-      margin-right: s(20,46.876)
+      color : $colorLightBlue
+      font-size : s(30,16)
+      margin-right : s(20,46.876)
   &__text
-    margin-top: s(50,16)
-    padding-bottom: s(100,16)
-    text-align: left
-    font-weight: 100
+    margin-top : s(50,16)
+    padding-bottom : s(100,16)
+    text-align : left
+    font-weight : 100
+
+/** MEDIA QUERIES **/
+
+@media only screen and (max-width: 1064px)
+  .biographie
+    padding : 0 s(20,16)
+
+@media only screen and (max-width: 740px)
+  .padding-mobile
+    padding-top : s(100,16)
+  .biographie
+    &__citation
+      font-size : s(20,16)
+      &:before
+        font-size : s(25,16)
+    &__text
+      font-size : s(14,16)
+
+@media only screen and (max-width: 470px)
+  .padding-mobile
+    padding-top : s(200,16)
+  .biographie
+    &__citation
+      font-size : s(16,16)

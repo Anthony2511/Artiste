@@ -2,7 +2,7 @@ doctype html
 html( lang="fr" )
   head
     include template/_meta
-  header.head
+  header
     h1.head__title-info( aria-level="1") Site de Nicolas de Stael
     nav.navigation
       h1.navigation__title( aria-level="1" ) Navigation principale
@@ -11,7 +11,7 @@ html( lang="fr" )
         span.navigation__toggle-text Menu
       ul.navigation__menu( id="main-menu" )
         li.navigation__menu-item
-          a.navigation__menu-link( href="bibliographie.html" ) Bibliographie
+          a.navigation__menu-link( href="#" ) Bibliographie
         li.navigation__menu-item
           a.navigation__menu-link( href="#" ) Galerie
         li.navigation__menu-item
@@ -20,13 +20,10 @@ html( lang="fr" )
           a.navigation__menu-link( href="#" )  Liens
         li.navigation__menu-item
           a.navigation__menu-link( href="#" ) Pratique
-    .head__bloc
-      h2.head__title( aria-level="2") Nicolas De Stael
-      span.head__text Un artiste et un peintre d'exception
   body
     section.biographie.padding-mobile
       section.bloc-bio
-        h3.title( aria-level="3") Biographie
+        h3.title( aria-level="3") Bibliographie
         figure.biographie__figure
           img( src="../images/nicolas.jpg" alt="Photo de Nicolas De Stael" width="1600" height="1600" )
         q.biographie__citation(lang="fr" title="Citation connue de Nicolas De Stael") L'espace pictural est un mur, mais tous les oiseaux du monde y volent librement, à toutes profondeurs.

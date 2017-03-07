@@ -18,3 +18,14 @@
   &__text
     font-size: s(32,16)
     font-weight: 100
+
+/***MEDIA QUERIES **/
+
+@media only screen and (max-width: 740px)
+  .head
+    background: none
+    max-height: 0
+    &__title
+      hidden()
+    &__text
+      hidden()
