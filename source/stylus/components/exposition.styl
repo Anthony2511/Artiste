@@ -14,10 +14,53 @@
       margin-right: s(40,37.5)
   &__text
     line-height: 1.6
-    padding: s(50,16) 0
+    padding: s(30,16) 0
   &__link
     color: $colorLightBlue
     font-weight: 500
   &__bloc-image
     max-width: s(350,16)
     margin-left: s(50,16)
+
+/**MEDIA QUERIES**/
+
+@media only screen and (max-width: 1064px)
+  .exposition
+    padding : s(100,16) s(20,16)
+    &__title
+      font-size: s(30,16)
+
+@media only screen and (max-width: 890px)
+  .exposition
+    column-gap: s(50,16)
+    &__title
+      font-size: s(25,16)
+    &__text
+      font-size: s(14,16)
+      padding: s(20,16) 0
+
+@media only screen and (max-width: 740px)
+  .exposition
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &__title
+      font-size: s(35,16)
+      &:before
+        hidden()
+    &__text
+      padding: s(30,16) s(50,14)
+      font-size: s(16,16)
+      text-align: center
+    &__bloc-image
+      margin-left: 0
+
+@media only screen and (max-width: 470px)
+  .exposition
+    &__title
+      font-size: s(25,16)
+    &__text
+      padding: s(30,16) 0
+      text-align: left
+      font-size: s(14,16)
