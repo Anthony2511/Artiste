@@ -1,0 +1,19 @@
+.fil-ariane
+  background-color: $backgroundColorInfoBooks
+  color: $colorText
+
+  &__width
+    max-width: s(960,16)
+    margin: 0 auto
+  &__title
+    hidden()
+  &__navigation
+    display: inline-flex
+  &__ariane-item
+    font-size: s(21,16)
+    padding: s(20,21) 0
+    &:nth-child(1)
+      &:after
+        icon( 'arrow-ariane' )
+        color: $colorLightBlue
+        padding : 0 s(30,16)
