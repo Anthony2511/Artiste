@@ -29,17 +29,36 @@ html( lang="fr" )
           li.fil-ariane__ariane-item
             a.fil-ariane__ariane-link( href="bibliographie.html") Bibliographie
   body
-    section.bibliographie.padding-mobile
+    .bibliographie.padding-mobile
       section.bloc-bio
         h2.title( aria-level="2" ) Bibliographie
     #wrap
-
       .bibliographie
         section.bibliographie__books
-          img(src="../images/book3.jpg" alt="Le prince foudroyé" width="180" height="260")
-          h4.bibliographie__title( aria-level="4" ) Le prince foudroyé
+          figure.bibliographie__figure
+            img.bibliographie__image(src="../images/book3.jpg" alt="Le prince foudroyé" width="180" height="260")
+          h3.bibliographie__title( aria-level="3" ) Le prince foudroyé
           span.biographie__author Laurent Greilsamer
-
+        section.bibliographie__books
+          figure.bibliographie__figure
+            img.bibliographie__image(src="../images/book5.jpg" alt="Nicolas De Stael" width="180" height="260")
+          h3.bibliographie__title( aria-level="3" ) Nicolas De Stael
+          span.biographie__author Arno Mansar
+        section.bibliographie__books
+          figure.bibliographie__figure
+            img.bibliographie__image(src="../images/book4.jpg" alt="Nicolas De Stael" width="180" height="260")
+          h3.bibliographie__title( aria-level="3" ) Nicolas De Stael
+          span.biographie__author Jean Louis Prat
+        section.bibliographie__books
+          figure.bibliographie__figure
+            img.bibliographie__image(src="../images/book2.jpg" alt="Le prince foudroyé" width="180" height="260")
+          h3.bibliographie__title( aria-level="3" ) La mesure de Nicolas De Stael
+          span.biographie__author Jean-Pierre Jouffroy
+        section.bibliographie__books
+          figure.bibliographie__figure
+            img.bibliographie__image(src="../images/book1.jpg" alt="Le prince foudroyé" width="180" height="260")
+          h3.bibliographie__title( aria-level="3" ) Le prince foudroyé
+          span.biographie__author Laurent Greilsamer
     footer.footer
       span &copy;Design by&nbsp;
       a.footer__link Anthony Beaumecker
