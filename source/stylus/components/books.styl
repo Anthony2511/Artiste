@@ -1,11 +1,39 @@
 .bibliographie
-  text-align: center;
+  clearfix()
   &__books
-    display: inline-block
-    margin-bottom: 100px
-    /*margin-right: 65px
-    &:last-child
-      margin-right: 0*/
+    float: left
+    margin: s(50,16) s(30,16)
+    max-width: s(250,16)
   &__image
-    min-width: 250px
-    height: auto;
+    min-width: s(250,16)
+    height: auto
+    display: block
+  &__bloc
+    background-color: $backgroundColorTitleBooks
+    color: $white
+    padding: s(20,16)
+    margin: 0
+    text-align: center
+  &__title
+    font-weight: 500
+    font-size: s(21,16)
+    line-height: 1.2em
+    margin-bottom: s(10,21)
+  &__author
+    font-weight: lighter
+  &__contenu
+    background-color: $backgroundColorInfoBooks
+    padding: 15px
+  &__contenu-info
+    font-size: s(14,16)
+    margin-bottom: s(15,16)
+    line-height: 1.6em
+  &__link
+    display: block;
+    text-align: center;
+    &:before
+      icon( 'arrow-details-livres' )
+      font-size: s(30,16)
+      color: $colorLightBlue
+.defil
+  display: block;
