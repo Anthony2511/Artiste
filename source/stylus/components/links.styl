@@ -1,0 +1,58 @@
+.liens
+  list-style: none
+  text-align: center
+  padding: 0
+  display: block
+  max-width: 100%
+  &__list
+    width: s(220,16)
+    height: s(220,16)
+    display: inline-block
+    margin: s(20,16)
+  &__item
+    background-color: $colorLightGrey
+    width: 100%
+    height: 100%
+    position: relative
+    border-radius: 50%
+    cursor: default
+    box-shadow: inset 0 0 0 0 $colorTextHeader,inset 0 0 0 s(16,16) $colorTextHeader,0 s(1,16) s(2,16) $colorTextHeader
+    transition: all 0.4s ease-in-out
+    &:hover
+      box-shadow: inset 0 0 0 s(110,16) $backgroundColorNav,inset 0 0 0 s(16,16) $backgroundColorNav,0 s(1,16) s(2,16) $backgroundColorNav
+  &__info
+    border-radius: 50%
+    overflow: hidden
+    opacity: 0
+    transition: all 0.4s ease-in-out
+    transform: scale(0)
+    backface-visibility: hidden
+    position: absolute
+    width: 100%
+    height: 100%
+  &__title
+    color: $white
+    text-transform: uppercase
+    font-size: s(22,16)
+    font-weight: 500
+    text-shadow: 0 0 s(1,22) $white,0 s(1,22) s(2,22) $white
+    position: relative
+    margin: 0 s(30,22)
+    border-bottom: s(1,22) solid white
+    padding: s(50,22) 0 0 0
+  &__text
+    padding: s(10,16) s(5,16)
+    margin: 0 s(30,16)
+  &__link
+    color: $white
+    font-size: s(18,16)
+    font-weight: 700
+    display: block
+    width: 100%
+    height: 100%
+    padding-top: s(50,18)
+    &:hover
+      color: $colorLightBlue
+.liens__item:hover .liens__info
+	opacity: 1
+	transform: scale(1)

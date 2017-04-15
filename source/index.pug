@@ -3,9 +3,9 @@ html( lang="fr" )
   head
     include template/_meta
   header.head
-    h1.head__title-info( aria-level="1") Site de Nicolas de Stael
+    h1.head__title-info( aria-level="1" role="heading" ) Site de Nicolas de Stael
     nav.navigation
-      h1.navigation__title( aria-level="1" ) Navigation principale
+      h1.navigation__title( aria-level="1" role="heading" ) Navigation principale
       a.navigation__toggle( href="#head-nav" )
         span.icon-menu( aria-hidden="true" )
         span.navigation__toggle-text Menu
@@ -13,27 +13,27 @@ html( lang="fr" )
         li.navigation__menu-item
           a.navigation__menu-link( href="bibliographie.html" ) Bibliographie
         li.navigation__menu-item
-          a.navigation__menu-link( href="#" ) Galerie
+          a.navigation__menu-link( href="gallerie.html" ) Galerie
         li.navigation__menu-item
           a.navigation__logo(href="index.html")
         li.navigation__menu-item
-          a.navigation__menu-link( href="#" )  Liens
+          a.navigation__menu-link( href="liens.html" )  Liens
         li.navigation__menu-item
-          a.navigation__menu-link( href="#" ) Pratique
+          a.navigation__menu-link( href="pratique.html" ) Pratique
     .head__bloc
-      h2.head__title( aria-level="2") Nicolas De Stael
+      h2.head__title( aria-level="2" role="heading" ) Nicolas De Stael
       span.head__text Un artiste et un peintre d'exception
   body
     .biographie.padding-mobile
       section.bloc-bio
-        h2.title( aria-level="2") Biographie
+        h2.title( aria-level="2" role="heading" ) Biographie
         figure.biographie__figure
           img( src="../images/nicolas.jpg" alt="Photo de Nicolas De Stael" width="1600" height="1600" )
         q.biographie__citation(lang="fr" title="Citation connue de Nicolas De Stael") L'espace pictural est un mur, mais tous les oiseaux du monde y volent librement, à toutes profondeurs.
         p.biographie__text Nicolas De Stael, à l’état civil, Baron Nicolaï Vladimirovitch Staël von Holstein,est un  peintre français d’origine russe est né à Saint-Pétersbourg en 1914.Au décès de ses parents en 1922, il est recueilli par un couple de russes installés à Bruxelles.Il suivra dans cette ville les cours de l’Académie de Bruxelles et de Saint Gilles.Il s’installe à Paris, dans les années 1930 et voyage en Europe et au Maroc.Il y rencontre la peintre Jeannine Guillou (Janine Teslar),sa compagne jusqu’à sa mort en 1946, dont il ne se remettra jamais.
     #wrap
       section.exposition
-          h2.exposition__title( aria-level="2") Exposition 2016-2017
+          h2.exposition__title( aria-level="2" role="heading" ) Exposition 2016-2017
           p.exposition__text Venez voir l'exposition de Nicolas De Stael consacrée à ses oeuvres les plus connues. Profitez de cette occasion pour en apprendre plus sur l'artiste.
           span.exposition__text Pour plus d'informations, notre page
             a.exposition__link(href="#") &nbsp;Pratique
