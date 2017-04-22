@@ -1,0 +1,62 @@
+.galerie
+  column-count: 3
+  &__picture
+    position: relative
+    color: $colorTextImages
+    margin-bottom: s(50,16)
+  &__peinture
+    max-width: s(270,16)
+    height: auto
+    display: block
+  &__opacity
+    display: inline-block
+    position: relative
+  &__info
+    position: absolute
+    width: s(270,16)
+    overflow: hidden
+    display: flex
+    flex-direction: row
+    flex-wrap:wrap
+    justify-content: center
+    align-items: center
+    padding: s(10,16)
+  &__title
+    font-size: s(16,16)
+    font-weight: bold
+    text-align: center
+    margin-bottom: s(30,16)
+  &__info-item
+    font-weight: lighter
+    font-size: s(14,16)
+    margin-bottom: s(20,14)
+    padding: 0 s(25,14)
+    &--peinture
+      &:before
+        icon("pinceau")
+        color: $colorLightBlue
+        margin-right: s(20,16)
+    &--width
+      &:before
+        icon("tableau")
+        color: $colorLightBlue
+        margin-right: s(20,16)
+    &--lieu
+      &:before
+        icon("lieu")
+        color: $colorLightBlue
+        margin-right: s(20,16)
+.galerie__opacity:hover .galerie__info
+  opacity: 1
+.galerie__opacity .galerie__info
+  opacity: 0
+  color: #FFF;
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  top: 0;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  transition: opacity .5s ease-in-out;
