@@ -3,9 +3,9 @@
   &__picture
     position: relative
     color: $colorTextImages
-    margin-bottom: s(50,16)
+    margin-bottom: s(20,16)
   &__peinture
-    max-width: s(270,16)
+    max-width: 100%
     height: auto
     display: block
   &__opacity
@@ -50,13 +50,42 @@
   opacity: 1
 .galerie__opacity .galerie__info
   opacity: 0
-  color: #FFF;
+  color: $white
   width: 100%
   height: 100%
-  background: rgba(0, 0, 0, 0.5);
-  margin: 0 auto;
-  top: 0;
-  opacity: 0;
-  display: block;
-  position: absolute;
-  transition: opacity .5s ease-in-out;
+  background: $backgroundColorImages
+  margin: 0 auto
+  top: 0
+  opacity: 0
+  display: block
+  position: absolute
+  transition: opacity .5s ease-in-out
+
+
+@media only screen and (max-width: 1030px)
+  .galerie
+    margin: 0 s(20,16)
+
+@media only screen and (max-width: 740px)
+  .galerie
+    column-count: 2
+
+@media only screen and (max-width: 585px)
+  .galerie
+    &__title
+      font-size: s(14,16)
+      margin-bottom: s(15,14)
+    &__info-item
+      font-size: s(12,16)
+      margin-bottom: s(10,12)
+
+@media only screen and (max-width: 470px)
+  .galerie
+    column-count: 1
+    &__title
+      font-size: s(16,16)
+      margin-bottom: s(30,16)
+    &__info-item
+      font-size: s(14,16)
+      margin-bottom: s(20,14)
+      text-align: center
