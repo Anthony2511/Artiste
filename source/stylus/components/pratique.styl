@@ -1,0 +1,80 @@
+.liens
+  color: $colorText
+  font-weight: lighter
+  line-height: 1.6em
+  &__infos
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: flex-start
+    margin-bottom: s(50,16)
+    max-width: s(600,16)
+    margin: 0 auto
+    padding-bottom: s(50,16)
+    border-bottom: s(1,16) solid $colorLightGrey
+  &__info-one
+    border-right: s(1,16) solid $colorLightGrey
+    padding-right: s(50,16)
+    max-width: s(250,16)
+    &:before
+      icon("lieu")
+      color: $colorLightBlue
+      font-size: s(40,16)
+  &__info-two
+    padding-left: s(50,16)
+    max-width: s(250,16)
+    &:before
+      icon("icon-calendrier")
+      color: $colorLightBlue
+      font-size: s(40,16)
+  &__lieu
+    &--margin
+      margin-top: s(20,16)
+  &__date
+    &--weight
+      font-weight: bold
+  &__formular
+    max-width: s(600,16)
+    margin: 0 auto
+  &__form-bloc
+    display: flex
+    flex-direction:column
+    margin-bottom: s(20,16)
+  &__legend
+    color: $colorLightBlue
+    font-size: s(14,16)
+    font-weight: normal
+    margin-bottom: s(20,14)
+  &__label
+    text-align: left
+    font-weight: normal
+  &__input
+    background-color: $backgroundColorInfoBooks
+    border: s(1,16) solid $colorLightGrey
+    border-radius: s(5,16)
+    padding: s(10,16)
+    &:hover,
+    &:focus
+      border: s(1,16) solid $colorLightBlue
+    &::placeholder
+      color: $colorLightGrey
+  &__commentaire
+    height: s(200,16)
+    background-color: $backgroundColorInfoBooks
+    border: s(1,16) solid $colorLightGrey
+    border-radius: s(5,16)
+    padding: s(10,16)
+    &:hover,
+    &:focus
+      border: s(1,16) solid $colorLightBlue
+    &::placeholder
+      color: $colorLightGrey
+  &__button
+    color: $white
+    border: 0
+    background-color: $colorLightGrey
+    font-size: s(18,16)
+    padding: s(20,18) s(100,18)
+    text-align: center
+    margin-top: s(20,18)
+    cursor: pointer

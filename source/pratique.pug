@@ -36,27 +36,29 @@ html( lang="fr" )
       .liens
         .liens__infos
           .liens__info-one
-            p.liens__lieu Palais des Beaux-Arts
+            p.liens__lieu.liens__lieu--margin Palais des Beaux-Arts
             p.liens__lieu Rue Ravenstein 23
             p.liens__lieu 1000 - Bruxelles
             p.liens__lieu Belgique
           .liens__info-two
-            p.liens__date Du 20 novembre 2016 au 15 mars 2017
+            p.liens__date.liens__lieu--margin Du 20 novembre 2016 au 15 mars 2017
             p.liens__date De 10h à 18h
             p.liens__date.liens__date--weight Fermé le lundi
-        .liens__formular
-          form(method="POST" action="index.html")
-            .liens__formular-one
-              label.liens__label(for="nom") Nom *
-              input.liens__input(type="text" name="nom" id="nom")
-              label.liens__label(for="prenom") Prénom *
-              input.liens__input(type="text" name="prenom" id="prenom")
-              label.liens__label(for="email") Email *
-              input.liens__input(type="email" name="email" id="email")
-            .liens__formular-two
-              label.liens__label(for="commentaire") Commentaire
-              textarea.liens__commentaire(name="commentaire" id="commentaire")
-            button.liens__button(value="Envoyer un message") Envoyer un message
+        form.liens__formular(method="GET" action="index.html")
+          legend.liens__legend Les champs accompagnés d'un * sont obligatoires
+          .liens__form-bloc
+            label.liens__label(for="nom") Nom *
+            input.liens__input(type="text" name="nom" id="nom" placeholder="Beaumecker")
+          .liens__form-bloc
+            label.liens__label(for="prenom") Prénom *
+            input.liens__input(type="text" name="prenom" id="prenom" placeholder="Anthony")
+          .liens__form-bloc
+            label.liens__label(for="email") Email *
+            input.liens__input(type="email" name="email" id="email" placeholder="anthonybeaumecker@gmail.com")
+          .liens__form-bloc
+            label.liens__label(for="commentaire") Commentaire
+            textarea.liens__commentaire(name="commentaire" id="commentaire" placeholder="Votre message")
+          button.liens__button(value="Envoyer un message") Envoyer un message
     footer.footer
       span &copy;Design by&nbsp;
       a.footer__link Anthony Beaumecker
