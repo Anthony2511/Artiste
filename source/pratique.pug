@@ -1,0 +1,63 @@
+doctype html
+html( lang="fr" )
+  head
+    include template/_meta
+  header
+    h1.head__title-info( aria-level="1" role="heading" ) Infos pratiques
+    nav.navigation
+      h1.navigation__title( aria-level="1" role="heading" ) Navigation principale
+      a.navigation__toggle( href="#head-nav" )
+        span.icon-menu( aria-hidden="true" )
+        span.navigation__toggle-text Menu
+      ul.navigation__menu( id="main-menu" )
+        li.navigation__menu-item
+          a.navigation__menu-link( href="bibliographie.html" ) Bibliographie
+        li.navigation__menu-item
+          a.navigation__menu-link( href="galerie.html" ) Galerie
+        li.navigation__menu-item
+          a.navigation__logo(href="index.html")
+        li.navigation__menu-item
+          a.navigation__menu-link( href="liens.html" ) Liens
+        li.navigation__menu-item
+          a.navigation__menu-link.navigation__menu-link--active( href="pratique.html" ) Pratique
+    .fil-ariane
+      section.fil-ariane__width
+        h1.fil-ariane__title( aria-level="1" role="heading" ) Fil d'ariane
+        ul.fil-ariane__navigation
+          li.fil-ariane__ariane-item
+            a.fil-ariane__ariane-link( href="index.html") Accueil
+          li.fil-ariane__ariane-item
+            a.fil-ariane__ariane-link( href="pratique.html") Pratique
+  body
+    .padding-mobile
+      section.bloc-bio
+        h2.title( aria-level="2" role="heading" ) Pratique 
+    #wrap
+      .liens
+        .liens__infos
+          .liens__info-one
+            p.liens__lieu Palais des Beaux-Arts
+            p.liens__lieu Rue Ravenstein 23
+            p.liens__lieu 1000 - Bruxelles
+            p.liens__lieu Belgique
+          .liens__info-two
+            p.liens__date Du 20 novembre 2016 au 15 mars 2017
+            p.liens__date De 10h à 18h
+            p.liens__date.liens__date--weight Fermé le lundi
+        .liens__formular
+          form(method="POST" action="index.html")
+            .liens__formular-one
+              label.liens__label(for="nom") Nom *
+              input.liens__input(type="text" name="nom" id="nom")
+              label.liens__label(for="prenom") Prénom *
+              input.liens__input(type="text" name="prenom" id="prenom")
+              label.liens__label(for="email") Email *
+              input.liens__input(type="email" name="email" id="email")
+            .liens__formular-two
+              label.liens__label(for="commentaire") Commentaire
+              textarea.liens__commentaire(name="commentaire" id="commentaire")
+            button.liens__button(value="Envoyer un message") Envoyer un message
+    footer.footer
+      span &copy;Design by&nbsp;
+      a.footer__link Anthony Beaumecker
+    include template/_scripts
