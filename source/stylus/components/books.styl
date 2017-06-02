@@ -1,11 +1,13 @@
 .bibliographie
-  clearfix()
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
   &__books
-    float: left
     margin: s(50,16) s(30,16)
     max-width: s(250,16)
+    height: auto
   &__image
-    min-width: s(250,16)
+    width: 100%
     height: auto
     display: block
   &__bloc
@@ -52,5 +54,19 @@
   height: 250px
   padding: 25px
 .bibliographie__contenu.defil ~ .bibliographie__link:before
-  transform: rotate(180deg);
-  transition: .8s ease transform;
+  transform: rotate(180deg)
+  transition: .8s ease transform
+
+@media screen and (max-width:948px)
+  .bibliographie
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+
+@media screen and (max-width:400px)
+  .bibliographie
+    &__title
+      font-size: s(18,16)
+    &__author
+      font-size: s(14,16)
