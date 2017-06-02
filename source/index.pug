@@ -6,20 +6,20 @@ html( lang="fr" )
     h1.head__title-info( aria-level="1" role="heading" ) Site de Nicolas de Stael
     nav.navigation
       h1.navigation__title( aria-level="1" role="heading" ) Navigation principale
-      a.navigation__toggle( href="#head-nav" )
+      a.navigation__toggle( href="#head-nav" title="Vers le menu" )
         span.icon-menu( aria-hidden="true" )
         span.navigation__toggle-text Menu
       ul.navigation__menu( id="main-menu" )
         li.navigation__menu-item
-          a.navigation__menu-link( href="bibliographie.html" ) Bibliographie
+          a.navigation__menu-link( href="bibliographie.html" title="Vers la page Bibliographie" ) Bibliographie
         li.navigation__menu-item
-          a.navigation__menu-link( href="galerie.html" ) Galerie
+          a.navigation__menu-link( href="galerie.html" title="Vers la page Galerie" ) Galerie
         li.navigation__menu-item
-          a.navigation__logo(href="index.html")
+          a.navigation__logo(href="index.html" title="Vers la page d'accueil")
         li.navigation__menu-item
-          a.navigation__menu-link( href="liens.html" )  Liens
+          a.navigation__menu-link( href="liens.html" title="Vers la page Liens" )  Liens
         li.navigation__menu-item
-          a.navigation__menu-link( href="pratique.html" ) Pratique
+          a.navigation__menu-link( href="pratique.html" title="Vers la page Pratique" ) Pratique
     .head__bloc
       h2.head__title( aria-level="2" role="heading" ) Nicolas De Stael
       span.head__text Un artiste et un peintre d'exception
@@ -36,10 +36,10 @@ html( lang="fr" )
           h2.exposition__title( aria-level="2" role="heading" ) Exposition 2016-2017
           p.exposition__text Venez voir l'exposition de Nicolas De Stael consacrée à ses oeuvres les plus connues. Profitez de cette occasion pour en apprendre plus sur l'artiste.
           span.exposition__text Pour plus d'informations, notre page
-            a.exposition__link(href="pratique.html") &nbsp;Pratique
+            a.exposition__link( href="pratique.html" title="Vers la page Pratique" ) &nbsp;Pratique
           figure.exposition__bloc-image
-            img(src="../images/bleu.jpg" alt="Image de l'exposition" width="1255" height="860")
+            img(src="../images/bleu.jpg" alt="Peinture de l'exposition" width="1255" height="860")
     footer.footer
-      span &copy;Design by&nbsp;
-      a.footer__link Anthony Beaumecker
+      span &copy; Design by&nbsp;
+      a.footer__link( href="http://beaumecker.be" title="Vers le site du développeur" ) Anthony Beaumecker
     include template/_scripts

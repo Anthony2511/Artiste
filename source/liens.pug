@@ -6,28 +6,28 @@ html( lang="fr" )
     h1.head__title-info( aria-level="1" role="heading" ) Liens externes
     nav.navigation
       h1.navigation__title( aria-level="1" role="heading" ) Navigation principale
-      a.navigation__toggle( href="#head-nav" )
+      a.navigation__toggle( href="#head-nav" title="Vers le menu" )
         span.icon-menu( aria-hidden="true" )
         span.navigation__toggle-text Menu
       ul.navigation__menu( id="main-menu" )
         li.navigation__menu-item
-          a.navigation__menu-link( href="bibliographie.html" ) Bibliographie
+          a.navigation__menu-link( href="bibliographie.html" title="Vers la page Bibliographie" ) Bibliographie
         li.navigation__menu-item
-          a.navigation__menu-link( href="galerie.html" ) Galerie
+          a.navigation__menu-link( href="galerie.html" title="Vers la page Galerie" ) Galerie
         li.navigation__menu-item
-          a.navigation__logo(href="index.html")
+          a.navigation__logo(href="index.html" title="Vers la page d'accueil" )
         li.navigation__menu-item
-          a.navigation__menu-link.navigation__menu-link--active( href="#" )  Liens
+          a.navigation__menu-link.navigation__menu-link--active( href="liens.html" title="Vers la page Liens" )  Liens
         li.navigation__menu-item
-          a.navigation__menu-link( href="pratique.html" ) Pratique
+          a.navigation__menu-link( href="pratique.html" title="Vers la page Pratique" ) Pratique
     .fil-ariane
       section.fil-ariane__width
         h1.fil-ariane__title( aria-level="1" role="heading" ) Fil d'ariane
         ul.fil-ariane__navigation
           li.fil-ariane__ariane-item
-            a.fil-ariane__ariane-link( href="index.html") Accueil
+            a.fil-ariane__ariane-link( href="index.html" title="Vers la page d'accueil" ) Accueil
           li.fil-ariane__ariane-item
-            a.fil-ariane__ariane-link( href="liens.html") Liens
+            a.fil-ariane__ariane-link( href="liens.html" title="Vers la page Liens" ) Liens
   body
     .padding-mobile
       section.bloc-bio
@@ -40,32 +40,32 @@ html( lang="fr" )
               section.liens__info
                 h3.liens__title( aria-level="3" role="heading") Officiel art
                 p.liens__text
-                  a.liens__link(href="http://www.artmajeur.com/fr/jeanne-bucher/stael.html") En savoir plus
+                  a.liens__link(href="http://www.artmajeur.com/fr/jeanne-bucher/stael.html" title="Vers le site Officiel Art" ) En savoir plus
           li.liens__list
             .liens__item
               section.liens__info
                 h3.liens__title( aria-level="3" role="heading") Maulpoix
                 p.liens__text
-                  a.liens__link(href="http://www.maulpoix.net/nicolas.html") En savoir plus
+                  a.liens__link(href="http://www.maulpoix.net/nicolas.html" title="Vers le site Maulpoix" ) En savoir plus
           li.liens__list
             .liens__item
               section.liens__info
                 h3.liens__title( aria-level="3" role="heading") Poster shop
                 p.liens__text
-                  a.liens__link(href="http://www.postershop.com/De-Stael-Nicolas-p.html") En savoir plus
+                  a.liens__link(href="http://www.postershop.com/De-Stael-Nicolas-p.html" title="Vers le site Poster Shop" ) En savoir plus
           li.liens__list
             .liens__item
               section.liens__info
                 h3.liens__title( aria-level="3" role="heading") Poster shop
                 p.liens__text
-                  a.liens__link(href="http://www.postershop.com/De-Stael-Nicolas-p.html") En savoir plus
+                  a.liens__link(href="http://www.postershop.com/De-Stael-Nicolas-p.html" title="Vers le site Poster Shop" ) En savoir plus
           li.liens__list
             .liens__item
               section.liens__info
                 h3.liens__title( aria-level="3" role="heading") Wanadoo
                 p.liens__text
-                  a.liens__link(href="http://pro.wanadoo.fr/art-deco.france/stael_f.htm") En savoir plus
+                  a.liens__link(href="http://pro.wanadoo.fr/art-deco.france/stael_f.htm" title="Vers le site Wanadoo" ) En savoir plus
     footer.footer
-      span &copy;Design by&nbsp;
-      a.footer__link Anthony Beaumecker
+      span &copy; Design by&nbsp;
+      a.footer__link( href="http://beaumecker.be" title="Vers le site du développeur" ) Anthony Beaumecker
     include template/_scripts

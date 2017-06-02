@@ -6,28 +6,28 @@ html( lang="fr" )
     h1.head__title-info( aria-level="1" role="heading" ) Galerie
     nav.navigation
       h1.navigation__title( aria-level="1" role="heading" ) Navigation principale
-      a.navigation__toggle( href="#head-nav" )
+      a.navigation__toggle( href="#head-nav" title="Vers le menu" )
         span.icon-menu( aria-hidden="true" )
         span.navigation__toggle-text Menu
       ul.navigation__menu( id="main-menu" )
         li.navigation__menu-item
-          a.navigation__menu-link( href="bibliographie.html" ) Bibliographie
+          a.navigation__menu-link( href="bibliographie.html" title="Vers la Bibliographie" ) Bibliographie
         li.navigation__menu-item
-          a.navigation__menu-link.navigation__menu-link--active( href="galerie.html" ) Galerie
+          a.navigation__menu-link.navigation__menu-link--active( href="galerie.html" title="Vers la page Galerie" ) Galerie
         li.navigation__menu-item
-          a.navigation__logo(href="index.html")
+          a.navigation__logo(href="index.html" title="Vers la page d'accueil" )
         li.navigation__menu-item
-          a.navigation__menu-link( href="liens.html" )  Liens
+          a.navigation__menu-link( href="liens.html" title="Vers la page Liens" )  Liens
         li.navigation__menu-item
-          a.navigation__menu-link( href="pratique.html" ) Pratique
+          a.navigation__menu-link( href="pratique.html" title="Vers la page Pratique" ) Pratique
     .fil-ariane
       section.fil-ariane__width
         h1.fil-ariane__title( aria-level="1" role="heading" ) Fil d'ariane
         ul.fil-ariane__navigation
           li.fil-ariane__ariane-item
-            a.fil-ariane__ariane-link( href="index.html") Accueil
+            a.fil-ariane__ariane-link( href="index.html" title="Vers la page d'accueil" ) Accueil
           li.fil-ariane__ariane-item
-            a.fil-ariane__ariane-link( href="galerie.html") Galerie
+            a.fil-ariane__ariane-link( href="galerie.html" title="Vers la page Galerie" ) Galerie
   body
     .padding-mobile
       section.bloc-bio
@@ -35,7 +35,7 @@ html( lang="fr" )
     #wrap
       .galerie
         .galerie__picture
-          a.galerie__link(href="../images/atelier.jpg")
+          a.galerie__link(href="../images/atelier.jpg" title="Vers l'image : Atelier" )
             .galerie__opacity
               img.galerie__peinture(src="../images/atelier.jpg" width="483" height="800" alt="Peinture : Atelier")
               section.galerie__info
@@ -45,7 +45,7 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 195 x 114 cm
                   li.galerie__info-item.galerie__info-item--lieu Galerie Jeanne Bucher
         .galerie__picture
-          a.galerie__link(href="../images/bateau.jpg")
+          a.galerie__link(href="../images/bateau.jpg" title="Vers l'image : Bateau" )
             .galerie__opacity
               img.galerie__peinture(src="../images/bateau.jpg" width="900" height="720" alt="Peinture : Bateau de guerre")
               section.galerie__info
@@ -55,7 +55,7 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 65 x 81 cm
                   li.galerie__info-item.galerie__info-item--lieu Collection particulière, Lausane
         .galerie__picture
-          a.galerie__link(href="../images/bleu.jpg")
+          a.galerie__link(href="../images/bleu.jpg" title="Vers l'image : Nature morte au chandeleier sur fond bleu" )
             .galerie__opacity
               img.galerie__peinture(src="../images/bleu.jpg" width="1255" height="860" alt="Peinture : Nature au chandelier sur fond bleu")
               section.galerie__info
@@ -65,7 +65,7 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 89 x 130 cm
                   li.galerie__info-item.galerie__info-item--lieu Musée Picasso, Antibes
         .galerie__picture
-          a.galerie__link(href="../images/boceaux.jpg")
+          a.galerie__link(href="../images/boceaux.jpg" title="Vers l'image : Nature morte aux bocaux" )
             .galerie__opacity
               img.galerie__peinture(src="../images/bocaux.jpg" width="1000" height="790" alt="Peinture : Nature morte aux boceaux")
               section.galerie__info
@@ -75,7 +75,7 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 65 x 81 cm
                   li.galerie__info-item.galerie__info-item--lieu Collection particulière
         .galerie__picture
-          a.galerie__link(href="../images/bouteilles.jpg")
+          a.galerie__link(href="../images/bouteilles.jpg" title="Vers l'image : Bouteilles" )
             .galerie__opacity
               img.galerie__peinture(src="../images/bouteilles.jpg" width="640" height="467" alt="Peinture : Bouteilles")
               section.galerie__info
@@ -85,7 +85,7 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 65 x 81 cm
                   li.galerie__info-item.galerie__info-item--lieu Courtesy Massimo Martino SA, Lugano
         .galerie__picture
-          a.galerie__link(href="../images/toits.jpg")
+          a.galerie__link(href="../images/toits.jpg" title="Vers l'image : Les toits" )
             .galerie__opacity
               img.galerie__peinture(src="../images/toits.jpg" width="960" height="1280" alt="Peinture : Les toits")
               section.galerie__info
@@ -95,7 +95,7 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 73 x 120 cm
                   li.galerie__info-item.galerie__info-item--lieu Collection particulière
         .galerie__picture
-          a.galerie__link(href="../images/composition.jpg")
+          a.galerie__link(href="../images/composition.jpg" title="Vers l'image : Composition" )
             .galerie__opacity
               img.galerie__peinture(src="../images/composition.jpg" width="633" height="900" alt="Peinture : Composition")
               section.galerie__info
@@ -105,7 +105,7 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 105 x 76 cm
                   li.galerie__info-item.galerie__info-item--lieu Collection particulière
         .galerie__picture
-          a.galerie__link(href="../images/fete.jpg")
+          a.galerie__link(href="../images/fete.jpg" title="Vers l'image : Jour de fête" )
             .galerie__opacity
               img.galerie__peinture(src="../images/fete.jpg" width="595" height="832" alt="Peinture : Jour de fête")
               section.galerie__info
@@ -115,7 +115,7 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 100 x 73 cm
                   li.galerie__info-item.galerie__info-item--lieu Galerie Jeanne Bucher
         .galerie__picture
-          a.galerie__link(href="../images/route.jpg")
+          a.galerie__link(href="../images/route.jpg" title="Vers l'image : La route de Dieu" )
             .galerie__opacity
               img.galerie__peinture(src="../images/route.jpg" width="900" height="679" alt="Peinture : La route de dieu")
               section.galerie__info
@@ -125,7 +125,7 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 60 x 81 cm
                   li.galerie__info-item.galerie__info-item--lieu Collection particulière
         .galerie__picture
-          a.galerie__link(href="../images/nu.jpg")
+          a.galerie__link(href="../images/nu.jpg" title="Vers l'image : Grand nu orange" )
             .galerie__opacity
               img.galerie__peinture(src="../images/nu.jpg" width="764" height="510" alt="Peinture : Grand nu orange")
               section.galerie__info
@@ -135,7 +135,7 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 89 x 146 cm
                   li.galerie__info-item.galerie__info-item--lieu Collection particulière
         .galerie__picture
-          a.galerie__link(href="../images/ressenti.jpg")
+          a.galerie__link(href="../images/ressenti.jpg" title="Vers l'image : Ressentiment" )
             .galerie__opacity
               img.galerie__peinture(src="../images/ressenti.jpg" width="402" height="500" alt="Peinture : Ressentiment")
               section.galerie__info
@@ -145,7 +145,7 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 100 x 81 cm
                   li.galerie__info-item.galerie__info-item--lieu Galerie Jeanne Bucher
         .galerie__picture
-          a.galerie__link(href="../images/grey.jpg")
+          a.galerie__link( href="../images/grey.jpg" title="Vers l'image : Paris la nuit" )
             .galerie__opacity
               img.galerie__peinture(src="../images/grey.jpg" width="1024" height="731" alt="Peinture : Paris la nuit")
               section.galerie__info
@@ -155,7 +155,7 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 45 x 60 cm
                   li.galerie__info-item.galerie__info-item--lieu Collection particulière, Suisse
         .galerie__picture
-          a.galerie__link(href="../images/route2.jpg")
+          a.galerie__link(href="../images/route2.jpg" title="Vers l'image : La route" )
             .galerie__opacity
               img.galerie__peinture(src="../images/route2.jpg" width="800" height="591" alt="Peinture : La route")
               section.galerie__info
@@ -165,7 +165,7 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 60 x 81 cm
                   li.galerie__info-item.galerie__info-item--lieu Collection particulière
         .galerie__picture
-          a.galerie__link(href="../images/foot.jpg")
+          a.galerie__link(href="../images/foot.jpg" title="Vers l'image : Les footballeurs" )
             .galerie__opacity
               img.galerie__peinture(src="../images/foot.jpg" width="1000" height="739" alt="Peinture : Les footballeurs")
               section.galerie__info
@@ -175,7 +175,7 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 65 x 81 cm
                   li.galerie__info-item.galerie__info-item--lieu Courtesy Galerie Daniel Malingue
         .galerie__picture
-          a.galerie__link(href="../images/train.jpg")
+          a.galerie__link(href="../images/train.jpg" title="Vers l'image : Chemin de fer au bord de la mer" )
             .galerie__opacity
               img.galerie__peinture(src="../images/train.jpg" width="650" height="466" alt="Peinture : Chemin de fer au bord de la mer")
               section.galerie__info
@@ -185,7 +185,7 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 73 x 100 cm
                   li.galerie__info-item.galerie__info-item--lieu  Courtesy Galerie Daniel Malingue 
         .galerie__picture
-          a.galerie__link(href="../images/red.jpg")
+          a.galerie__link(href="../images/red.jpg" title="Vers l'image : Bouteilles rouges" )
             .galerie__opacity
               img.galerie__peinture(src="../images/red.jpg" width="879" height="633" alt="Peinture : Bouteilles rouges")
               section.galerie__info
@@ -195,6 +195,6 @@ html( lang="fr" )
                   li.galerie__info-item.galerie__info-item--width 73 x 100 cm
                   li.galerie__info-item.galerie__info-item--lieu Collection particulière, Suisse           
     footer.footer
-      span &copy;Design by&nbsp;
-      a.footer__link Anthony Beaumecker
+      span &copy; Design by&nbsp;
+      a.footer__link(href="http://beaumecker.be" title="Vers le site du développeur" ) Anthony Beaumecker
     include template/_scripts

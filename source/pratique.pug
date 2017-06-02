@@ -6,28 +6,28 @@ html( lang="fr" )
     h1.head__title-info( aria-level="1" role="heading" ) Infos pratiques
     nav.navigation
       h1.navigation__title( aria-level="1" role="heading" ) Navigation principale
-      a.navigation__toggle( href="#head-nav" )
+      a.navigation__toggle( href="#head-nav" title="Vers le menu" )
         span.icon-menu( aria-hidden="true" )
         span.navigation__toggle-text Menu
       ul.navigation__menu( id="main-menu" )
         li.navigation__menu-item
-          a.navigation__menu-link( href="bibliographie.html" ) Bibliographie
+          a.navigation__menu-link( href="bibliographie.html" title="Vers la page Bibliographie" ) Bibliographie
         li.navigation__menu-item
-          a.navigation__menu-link( href="galerie.html" ) Galerie
+          a.navigation__menu-link( href="galerie.html" title="Vers la page Galerie" ) Galerie
         li.navigation__menu-item
-          a.navigation__logo(href="index.html")
+          a.navigation__logo(href="index.html" title="Vers la page d'accueil" )
         li.navigation__menu-item
-          a.navigation__menu-link( href="liens.html" ) Liens
+          a.navigation__menu-link( href="liens.html" title="Vers la page Liens" ) Liens
         li.navigation__menu-item
-          a.navigation__menu-link.navigation__menu-link--active( href="pratique.html" ) Pratique
+          a.navigation__menu-link.navigation__menu-link--active( href="pratique.html" title="Vers la page Pratique" ) Pratique
     .fil-ariane
       section.fil-ariane__width
         h1.fil-ariane__title( aria-level="1" role="heading" ) Fil d'ariane
         ul.fil-ariane__navigation
           li.fil-ariane__ariane-item
-            a.fil-ariane__ariane-link( href="index.html") Accueil
+            a.fil-ariane__ariane-link( href="index.html" title="Vers la page d'accueil" ) Accueil
           li.fil-ariane__ariane-item
-            a.fil-ariane__ariane-link( href="pratique.html") Pratique
+            a.fil-ariane__ariane-link( href="pratique.html" title="Vers la page Pratique" ) Pratique
   body
     .padding-mobile
       section.bloc-bio
@@ -60,6 +60,6 @@ html( lang="fr" )
             textarea.liens__commentaire(name="commentaire" id="commentaire" placeholder="Votre message")
           button.liens__button(value="Envoyer un message") Envoyer un message
     footer.footer
-      span &copy;Design by&nbsp;
-      a.footer__link Anthony Beaumecker
+      span &copy; Design by&nbsp;
+      a.footer__link(href="http://beaumecker.be" title="Vers le site du développeur" ) Anthony Beaumecker
     include template/_scripts
