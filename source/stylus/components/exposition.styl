@@ -12,6 +12,8 @@
       color: $colorLightBlue
       font-size: s(12,16)
       margin-right: s(40,37.5)
+      display: inline-block
+      transition: 0.3s ease-in-out
   &__text
     line-height: 1.6
     padding: s(30,16) 0
@@ -25,6 +27,11 @@
   &__bloc-image
     max-width: s(350,16)
     margin-left: s(50,16)
+
+.exposition:hover .exposition__title:before
+  transform: translateX(20px)
+  transition: 0.3s ease-in-out
+
 
 /**MEDIA QUERIES**/
 
