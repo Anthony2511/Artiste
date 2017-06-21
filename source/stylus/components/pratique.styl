@@ -78,3 +78,24 @@
     text-align: center
     margin-top: s(20,18)
     cursor: pointer
+
+@media screen and (max-width:650px)
+  .liens
+    padding: 0 s(20,16)
+
+@media screen and (max-width:550px)
+  .liens
+    padding: 0 s(20,16)
+    &__infos
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__info-one
+      padding-right: 0
+      border-right: none
+      margin-bottom: s(50,16)
+    &__info-two
+      padding-left: 0
+    &__button
+      font-size: s(14,16)
+      padding: s(10,14) s(70,14)
