@@ -1,8 +1,4 @@
-/*
-Responsive nav menu with sub menus only on larger screens.
 
-This is more than three years old now - please take it with a big pinch of salt - there are better ways to achieve the same thing!
-*/
 
 /**********
 MOBILE MENU

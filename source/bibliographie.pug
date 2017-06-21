@@ -2,33 +2,35 @@ doctype html
 html( lang="fr" )
   head
     include template/_meta
-  header
-    h1.head__title-info( aria-level="1" role="heading" ) Site de Nicolas de Stael
-    nav.navigation
-      h1.navigation__title( aria-level="1" role="heading" ) Navigation principale
-      a.navigation__toggle( href="#head-nav" title="Vers le menu" )
-        span.icon-menu( aria-hidden="true" )
-        span.navigation__toggle-text Menu
-      ul.navigation__menu( id="main-menu" )
-        li.navigation__menu-item
-          a.navigation__menu-link.navigation__menu-link--active( href="bibliographie.html" title="Vers la page Bibliographie" ) Bibliographie
-        li.navigation__menu-item
-          a.navigation__menu-link( href="galerie.html" title="Vers la page Galerie" ) Galerie
-        li.navigation__menu-item
-          a.navigation__logo(href="index.html" title="Vers la page d'accueil" )
-        li.navigation__menu-item
-          a.navigation__menu-link( href="liens.html" title="Vers la page Liens" )  Liens
-        li.navigation__menu-item
-          a.navigation__menu-link( href="pratique.html" title="Vers la page Pratique" ) Pratique
-    .fil-ariane
-      section.fil-ariane__width
-        h1.fil-ariane__title( aria-level="1" role="heading" ) Fil d'ariane
-        ul.fil-ariane__navigation
-          li.fil-ariane__ariane-item
-            a.fil-ariane__ariane-link( href="index.html" title="Vers la page d'accueil" ) Accueil
-          li.fil-ariane__ariane-item
-            a.fil-ariane__ariane-link( href="bibliographie.html" title="Vers la page Bibliographie" ) Bibliographie
   body
+    header
+      h1.head__title-info( aria-level="1" role="heading" ) Site de Nicolas de Stael
+      nav.navigation
+        h2.navigation__title( aria-level="2" role="heading" ) Navigation principale
+        a.navigation__toggle( href="#head-nav" title="Vers le menu" )
+          span.icon-menu( aria-hidden="true" )
+          span.navigation__toggle-text Menu
+        ul.navigation__menu( id="main-menu" )
+          li.navigation__menu-item
+            a.navigation__menu-link.navigation__menu-link--active( href="bibliographie.html" title="Vers la page Bibliographie" ) Bibliographie
+          li.navigation__menu-item
+            a.navigation__menu-link( href="galerie.html" title="Vers la page Galerie" ) Galerie
+          li.navigation__menu-item
+            a(href="index.html" title="Vers la page d'accueil")
+              span.navigation__logo
+              span.navigation__hidden-link Accueil
+          li.navigation__menu-item
+            a.navigation__menu-link( href="liens.html" title="Vers la page Liens" )  Liens
+          li.navigation__menu-item
+            a.navigation__menu-link( href="pratique.html" title="Vers la page Pratique" ) Pratique
+      .fil-ariane
+        section.fil-ariane__width
+          h1.fil-ariane__title( aria-level="1" role="heading" ) Fil d'ariane
+          ul.fil-ariane__navigation
+            li.fil-ariane__ariane-item
+              a.fil-ariane__ariane-link( href="index.html" title="Vers la page d'accueil" ) Accueil
+            li.fil-ariane__ariane-item
+              a.fil-ariane__ariane-link( href="bibliographie.html" title="Vers la page Bibliographie" ) Bibliographie
     .padding-mobile
       section.bloc-bio
         h2.title( aria-level="2" role="heading" ) Bibliographie
@@ -36,7 +38,7 @@ html( lang="fr" )
       .bibliographie
         .bibliographie__books
           figure.bibliographie__figure
-            img.bibliographie__image(src="../images/book3.jpg" alt="Le prince foudroyé" width="180" height="260")
+            img.bibliographie__image(src="./images/book3.jpg" alt="Le prince foudroyé" width="180" height="260")
           section.bibliographie__bloc
             h3.bibliographie__title( aria-level="3" role="heading" ) Le prince foudroyé
             span.biographie__author Laurent Greilsamer
@@ -47,7 +49,7 @@ html( lang="fr" )
           a.bibliographie__link(href="" id="link" title="Vers les infos du livre")
         .bibliographie__books
           figure.bibliographie__figure
-            img.bibliographie__image(src="../images/book5.jpg" alt="Nicolas De Stael" width="180" height="260")
+            img.bibliographie__image(src="./images/book5.jpg" alt="Nicolas De Stael" width="180" height="260")
           section.bibliographie__bloc
             h3.bibliographie__title( aria-level="3" role="heading" ) Nicolas De Stael
             span.biographie__author Arno Mansar
@@ -58,7 +60,7 @@ html( lang="fr" )
           a.bibliographie__link(href="" id="link" title="Vers les infos du livre")
         .bibliographie__books
           figure.bibliographie__figure
-            img.bibliographie__image(src="../images/book4.jpg" alt="Nicolas De Stael" width="180" height="260")
+            img.bibliographie__image(src="./images/book4.jpg" alt="Nicolas De Stael" width="180" height="260")
           section.bibliographie__bloc
             h3.bibliographie__title( aria-level="3" role="heading" ) Nicolas De Stael
             span.biographie__author Jean Louis Prat
@@ -69,7 +71,7 @@ html( lang="fr" )
           a.bibliographie__link(href="" id="link" title="Vers les infos du livre" )
         .bibliographie__books
           figure.bibliographie__figure
-            img.bibliographie__image(src="../images/book2.jpg" alt="Le prince foudroyé" width="180" height="260")
+            img.bibliographie__image(src="./images/book2.jpg" alt="Le prince foudroyé" width="180" height="260")
           section.bibliographie__bloc
             h3.bibliographie__title( aria-level="3" role="heading" ) La mesure de Nicolas De Stael
             span.biographie__author Jean-Pierre Jouffroy
@@ -80,7 +82,7 @@ html( lang="fr" )
           a.bibliographie__link(href="" id="link" title="Vers les infos du livre" )
         .bibliographie__books
           figure.bibliographie__figure
-            img.bibliographie__image(src="../images/book1.jpg" alt="Le prince foudroyé" width="180" height="260")
+            img.bibliographie__image(src="./images/book1.jpg" alt="Le prince foudroyé" width="180" height="260")
           section.bibliographie__bloc
             h3.bibliographie__title( aria-level="3" role="heading" ) Le prince foudroyé
             span.biographie__author Laurent Greilsamer
